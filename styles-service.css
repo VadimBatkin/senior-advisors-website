@@ -1,0 +1,451 @@
+/* Service Pages Specific Styles */
+
+/* Service Hero Section */
+.service-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.service-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-icon-large {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.service-icon-large svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.service-icon-large.orange {
+    background: rgba(255, 107, 53, 0.2);
+}
+
+.service-icon-large.teal {
+    background: rgba(52, 152, 219, 0.2);
+}
+
+.service-icon-large.red {
+    background: rgba(231, 76, 60, 0.2);
+}
+
+.service-icon-large.gray {
+    background: rgba(108, 117, 125, 0.2);
+}
+
+.service-page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.service-page-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Service Section */
+.service-section {
+    padding: 80px 0;
+}
+
+.service-section.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Benefits Grid */
+.service-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.benefit-icon svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.benefit-icon.orange {
+    background: #F47720;
+}
+
+.benefit-icon.teal {
+    background: #3498DB;
+}
+
+.benefit-icon.red {
+    background: #E74C3C;
+}
+
+.benefit-icon.gray {
+    background: #6C757D;
+}
+
+.benefit-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Process Timeline */
+.process-timeline {
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 65px;
+    width: 2px;
+    height: calc(100% + 10px);
+    background: linear-gradient(to bottom, #667eea, transparent);
+}
+
+.timeline-number {
+    min-width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.timeline-content p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* Services Details */
+.services-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.detail-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.detail-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.detail-item p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* M&A Types */
+.ma-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.ma-type-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.ma-type-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.ma-type-description {
+    color: #6c757d;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.ma-features {
+    list-style: none;
+    padding: 0;
+}
+
+.ma-features li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.ma-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Case Examples */
+.case-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.case-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.case-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.case-industry {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.case-description {
+    color: #495057;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.case-result {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.case-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.result-card {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.result-number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.service-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 100px 0 60px;
+    }
+
+    .service-page-title {
+        font-size: 2rem;
+    }
+
+    .service-page-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .service-section {
+        padding: 60px 0;
+    }
+
+    .service-benefits-grid,
+    .services-details,
+    .ma-types,
+    .case-examples {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        gap: 20px;
+    }
+
+    .timeline-number {
+        min-width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        left: 25px;
+        top: 50px;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .result-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon-large {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-icon-large svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .service-page-title {
+        font-size: 1.75rem;
+    }
+
+    .benefit-card,
+    .ma-type-card,
+    .case-card {
+        padding: 25px;
+    }
+}

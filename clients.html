@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши клиенты - Senior Advisors</title>
+    <meta name="description" content="Клиенты Senior Advisors - ведущие компании из различных отраслей, которым мы помогаем достигать стратегических целей">
+    <link rel="stylesheet" href="styles-ru.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Clients Page Specific Styles */
+        .clients-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 8rem 0 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clients-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(244, 119, 32, 0.1) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .clients-hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .clients-page-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .clients-page-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .clients-section {
+            padding: 5rem 0;
+        }
+
+        .clients-section.bg-light {
+            background: #f8f9fa;
+        }
+
+        .clients-intro {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .clients-intro h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .clients-intro p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .client-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid #F47720;
+            text-align: center;
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .client-logo-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .client-logo {
+            max-width: 120px;
+            max-height: 120px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .client-logo-placeholder {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #F47720 0%, #FF8A3D 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .client-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .client-industry {
+            font-size: 0.95rem;
+            color: #F47720;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .client-description {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .industry-section {
+            margin-bottom: 5rem;
+        }
+
+        .industry-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .industry-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #F47720;
+            display: inline-block;
+        }
+
+        .stats-strip {
+            background: white;
+            padding: 3rem 0;
+            margin: 0 0 5rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #F47720 0%, #FF8A3D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .clients-page-title {
+                font-size: 2.5rem;
+            }
+
+            .clients-page-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index-ru.html" class="logo">
+                        <img src="logos/Senior Advisors.png" alt="Senior Advisors" class="logo-image">
+                        <div class="logo-text">Senior<span class="accent">Advisors</span></div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index-ru.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="index-ru.html#services" class="nav-link">Услуги</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-market-research.html">Анализ рынков</a></li>
+                            <li><a href="service-strategy.html">Разработка стратегий</a></li>
+                            <li><a href="service-investment.html">Инвестиционный консалтинг</a></li>
+                            <li><a href="service-fundraising.html">Привлечение финансирования</a></li>
+                            <li><a href="service-acquisition.html">Приобретение активов</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="clients.html" class="nav-link active">Клиенты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">Команда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-ru.html#contact" class="nav-link">Контакты</a>
+                    </li>
+                    <li class="nav-item language-switcher">
+                        <a href="clients-en.html" class="nav-link">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-ru.html#contact" class="cta-button">Получить консультацию</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Section -->
+        <section class="clients-section" style="padding-top: 120px; padding-bottom: 3rem;">
+            <div class="container">
+                <div class="clients-intro">
+                    <h2>Наши клиенты</h2>
+                    <p>За годы работы мы построили долгосрочные отношения с компаниями различных масштабов — от быстрорастущих стартапов до крупных холдингов. Наши клиенты доверяют нам решение самых сложных стратегических задач.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Strip -->
+        <div class="stats-strip">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Клиентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Проектов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Отраслей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Categories -->
+        <section class="clients-section">
+            <div class="container">
+
+                <!-- Technology & Internet -->
+                <div class="industry-section">
+                    <h3 class="industry-title">Технологии и Интернет</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">YC</div>
+                            <h4 class="client-name">Yandex Cloud</h4>
+                            <p class="client-industry">Cloud Infrastructure</p>
+                            <p class="client-description">Облачная платформа компании Yandex</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">NT</div>
+                            <h4 class="client-name">NtechLab</h4>
+                            <p class="client-industry">AI & Computer Vision</p>
+                            <p class="client-description">Российская IT-компания, разрабатывающая продукты в сфере искусственного интеллекта</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">K</div>
+                            <h4 class="client-name">Kaspersky</h4>
+                            <p class="client-industry">Кибербезопасность</p>
+                            <p class="client-description">Крупнейшая российская IT-компания, разрабатывающая продукты в области кибербезопасности</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">PT</div>
+                            <h4 class="client-name">Positive Technologies</h4>
+                            <p class="client-industry">Кибербезопасность</p>
+                            <p class="client-description">Российская компания, специализирующаяся на разработке решений в сфере информационной безопасности</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">IV</div>
+                            <h4 class="client-name">IVI</h4>
+                            <p class="client-industry">Онлайн-развлечения</p>
+                            <p class="client-description">Лидирующий игрок на российском рынке онлайн-кинотеатров</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">SK</div>
+                            <h4 class="client-name">SKAI</h4>
+                            <p class="client-industry">Автотелематика</p>
+                            <p class="client-description">Российская компания-вендор решений в сфере автомобильной телематики</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">PA</div>
+                            <h4 class="client-name">Palabra AI</h4>
+                            <p class="client-industry">AI Technology</p>
+                            <p class="client-description">AI-перевод речи в реальном времени</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ЦД</div>
+                            <h4 class="client-name">Оператор ЦОД</h4>
+                            <p class="client-industry">Cloud Infrastructure</p>
+                            <p class="client-description">Один из крупнейших в России операторов сети коммерческих ЦОДов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">iD</div>
+                            <h4 class="client-name">i-Digital</h4>
+                            <p class="client-industry">Телекоммуникации</p>
+                            <p class="client-description">IT-компания, входящая в TOP 5 ведущих SMS-агрегаторов в России</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">СИ</div>
+                            <h4 class="client-name">Северсталь Инфоком</h4>
+                            <p class="client-industry">IT Services</p>
+                            <p class="client-description">Центр информационных и коммуникационных технологий компании «Северсталь»</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">IVA</div>
+                            <h4 class="client-name">IVA Technologies</h4>
+                            <p class="client-industry">Enterprise Software</p>
+                            <p class="client-description">Лидирующий российский разработчик экосистемы корпоративных коммуникаций</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">TT</div>
+                            <h4 class="client-name">Taptop</h4>
+                            <p class="client-industry">DesignTech</p>
+                            <p class="client-description">Визуальный редактор кода для дизайнеров</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">DO</div>
+                            <h4 class="client-name">DaOffice</h4>
+                            <p class="client-industry">Enterprise Software</p>
+                            <p class="client-description">Корпоративная социальная сеть</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">SW</div>
+                            <h4 class="client-name">Smartway</h4>
+                            <p class="client-industry">Business Travel Tech</p>
+                            <p class="client-description">Онлайн-сервис для организации командировок</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">C2D</div>
+                            <h4 class="client-name">Chat2Desk</h4>
+                            <p class="client-industry">Business Communications</p>
+                            <p class="client-description">Экосистема бизнес-коммуникаций</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce & Retail -->
+                <div class="industry-section">
+                    <h3 class="industry-title">E-commerce и Ритейл</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АС</div>
+                            <h4 class="client-name">Автостэлс</h4>
+                            <p class="client-industry">E-commerce</p>
+                            <p class="client-description">Крупный B2B-ecom дилер автозапчастей, один из лидеров в сфере кросс-докинга</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ZS</div>
+                            <h4 class="client-name">ZoneSmart</h4>
+                            <p class="client-industry">E-commerce</p>
+                            <p class="client-description">Агентство и SAAS-сервис в сфере торговли на маркетплейсах</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">VD</div>
+                            <h4 class="client-name">Велодрайв</h4>
+                            <p class="client-industry">Ритейл</p>
+                            <p class="client-description">Крупнейшая специализированная сеть велосипедных магазинов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">BB</div>
+                            <h4 class="client-name">Birds.Build</h4>
+                            <p class="client-industry">B2B E-commerce</p>
+                            <p class="client-description">Маркетплейс для бизнеса. Торговая B2B площадка</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ПЭ</div>
+                            <h4 class="client-name">Платформа электронных компонентов</h4>
+                            <p class="client-industry">E-commerce</p>
+                            <p class="client-description">Онлайн-платформа для поиска, комплектации и заказа электронных компонентов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ТЦ</div>
+                            <h4 class="client-name">Три цены</h4>
+                            <p class="client-industry">Ритейл</p>
+                            <p class="client-description">Лидирующий ритейлер формата фиксированных цен в Республике Беларусь</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HealthTech & Medicine -->
+                <div class="industry-section">
+                    <h3 class="industry-title">HealthTech и Медицина</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">CM</div>
+                            <h4 class="client-name">CheckMe</h4>
+                            <p class="client-industry">HealthTech</p>
+                            <p class="client-description">Онлайн-платформа для бронирования медицинских услуг</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">YT</div>
+                            <h4 class="client-name">YouTalk</h4>
+                            <p class="client-industry">HealthTech</p>
+                            <p class="client-description">Онлайн-сервис психологической помощи</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">СЕ</div>
+                            <h4 class="client-name">МГМУ им. Сеченова</h4>
+                            <p class="client-industry">Фармацевтика</p>
+                            <p class="client-description">Первый Московский государственный медицинский университет</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">РК</div>
+                            <h4 class="client-name">Региональная сеть клиник</h4>
+                            <p class="client-industry">Здравоохранение</p>
+                            <p class="client-description">Крупная региональная сеть многопрофильных медицинских клиник</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АС</div>
+                            <h4 class="client-name">АСНА</h4>
+                            <p class="client-industry">Фармацевтика</p>
+                            <p class="client-description">Крупнейшая сеть независимых аптек</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logistics & Transport -->
+                <div class="industry-section">
+                    <h3 class="industry-title">Логистика и Транспорт</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">SH</div>
+                            <h4 class="client-name">Shiptor</h4>
+                            <p class="client-industry">Logistics Tech</p>
+                            <p class="client-description">Логистическая платформа для электронной торговли</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">FL</div>
+                            <h4 class="client-name">Flash</h4>
+                            <p class="client-industry">Логистика</p>
+                            <p class="client-description">Одна из крупнейших в России логистических компаний в сфере автомобильных перевозок</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">SM</div>
+                            <h4 class="client-name">Silmar / MSC</h4>
+                            <p class="client-industry">Логистика</p>
+                            <p class="client-description">Международный оператор контейнерных перевозок</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">15</div>
+                            <h4 class="client-name">1520 Logistics</h4>
+                            <p class="client-industry">Логистика</p>
+                            <p class="client-description">Крупная логистическая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">CB</div>
+                            <h4 class="client-name">Checkburo</h4>
+                            <p class="client-industry">AutoTech</p>
+                            <p class="client-description">Сервис проверки автомобилей</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АЛ</div>
+                            <h4 class="client-name">Компания автомобильной логистики</h4>
+                            <p class="client-industry">Автомобильная логистика</p>
+                            <p class="client-description">Крупнейшая компания в России в сфере автомобильной логистики</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">WH</div>
+                            <h4 class="client-name">Whizz</h4>
+                            <p class="client-industry">Micromobility</p>
+                            <p class="client-description">Лидирующий игрок на рынке micromobility в США</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HoReCa & Hospitality -->
+                <div class="industry-section">
+                    <h3 class="industry-title">HoReCa и Гостеприимство</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">H</div>
+                            <h4 class="client-name">Harats</h4>
+                            <p class="client-industry">HoReCa</p>
+                            <p class="client-description">Крупнейшая международная сеть пабов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АО</div>
+                            <h4 class="client-name">Азимут Отели</h4>
+                            <p class="client-industry">Гостиничный бизнес</p>
+                            <p class="client-description">Крупная сеть отелей</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ФС</div>
+                            <h4 class="client-name">Федеральная сеть общепита</h4>
+                            <p class="client-industry">HoReCa</p>
+                            <p class="client-description">Федеральная сеть общественного питания</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FinTech -->
+                <div class="industry-section">
+                    <h3 class="industry-title">FinTech</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ZE</div>
+                            <h4 class="client-name">Zaim Express</h4>
+                            <p class="client-industry">FinTech</p>
+                            <p class="client-description">Крупная МФО</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ST</div>
+                            <h4 class="client-name">STOKR</h4>
+                            <p class="client-industry">FinTech</p>
+                            <p class="client-description">Немецкая платформа для токенизации активов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">CF</div>
+                            <h4 class="client-name">Casas Finance</h4>
+                            <p class="client-industry">FinTech</p>
+                            <p class="client-description">Испанская финансовая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">CD</div>
+                            <h4 class="client-name">Cardoo</h4>
+                            <p class="client-industry">FinTech</p>
+                            <p class="client-description">Платформа бездепозитной аренды автомобилей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PropTech & Real Estate -->
+                <div class="industry-section">
+                    <h3 class="industry-title">PropTech и Недвижимость</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">RS</div>
+                            <h4 class="client-name">Restate</h4>
+                            <p class="client-industry">PropTech</p>
+                            <p class="client-description">Крупный классифайд недвижимости</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АН</div>
+                            <h4 class="client-name">Агрегатор недвижимости</h4>
+                            <p class="client-industry">PropTech</p>
+                            <p class="client-description">Один из лидирующих агрегаторов в сфере недвижимости</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АГ</div>
+                            <h4 class="client-name">Армо-групп</h4>
+                            <p class="client-industry">Недвижимость</p>
+                            <p class="client-description">Крупный холдинг по управлению недвижимостью</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">RB</div>
+                            <h4 class="client-name">RBI</h4>
+                            <p class="client-industry">Недвижимость</p>
+                            <p class="client-description">Крупная девелоперская компания</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Production & Manufacturing -->
+                <div class="industry-section">
+                    <h3 class="industry-title">Производство</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">РТ</div>
+                            <h4 class="client-name">Ростех</h4>
+                            <p class="client-industry">Промышленность</p>
+                            <p class="client-description">Крупнейшая промышленно-технологическая группа</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ЕR</div>
+                            <h4 class="client-name">ERG</h4>
+                            <p class="client-industry">Промышленность</p>
+                            <p class="client-description">Крупнейший казахстанский холдинг в сфере добычи и переработки природных ресурсов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">РТ</div>
+                            <h4 class="client-name">РТРБ</h4>
+                            <p class="client-industry">Инвестиции</p>
+                            <p class="client-description">Инвестиционный фонд группы Ростех</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">BR</div>
+                            <h4 class="client-name">Bitrobotics</h4>
+                            <p class="client-industry">FoodTech</p>
+                            <p class="client-description">Один из лидеров в сфере роботизации пищевой промышленности</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">РХ</div>
+                            <h4 class="client-name">Русхлеб</h4>
+                            <p class="client-industry">Пищевая промышленность</p>
+                            <p class="client-description">Крупный производитель хлебопекарных ингредиентов</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">СЕ</div>
+                            <h4 class="client-name">Сыры "Естественно"</h4>
+                            <p class="client-industry">Пищевая промышленность</p>
+                            <p class="client-description">Дистрибутор молочной продукции</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">MR</div>
+                            <h4 class="client-name">Moley Robotics</h4>
+                            <p class="client-industry">Robotics</p>
+                            <p class="client-description">Роботизированные кухни на рынке Великобритании</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АБ</div>
+                            <h4 class="client-name">АБЗ-1</h4>
+                            <p class="client-industry">Производство</p>
+                            <p class="client-description">Один из крупнейших производителей асфальто-бетона</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">HJ</div>
+                            <h4 class="client-name">Hongjing Electronics</h4>
+                            <p class="client-industry">Электроника</p>
+                            <p class="client-description">Крупный китайский производитель и дистрибьютор электронного оборудования</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">PL</div>
+                            <h4 class="client-name">Polair</h4>
+                            <p class="client-industry">Производство оборудования</p>
+                            <p class="client-description">Крупнейший производитель профессионального холодильного оборудования</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">AN</div>
+                            <h4 class="client-name">Ansaligy</h4>
+                            <p class="client-industry">Производство</p>
+                            <p class="client-description">Производитель уходовой косметики премиум-класса</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media & Entertainment -->
+                <div class="industry-section">
+                    <h3 class="industry-title">Медиа и Развлечения</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">МТ</div>
+                            <h4 class="client-name">Матч ТВ</h4>
+                            <p class="client-industry">Медиа</p>
+                            <p class="client-description">Один из федеральных телеканалов РФ</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ГР</div>
+                            <h4 class="client-name">Грамота.ру</h4>
+                            <p class="client-industry">EdTech</p>
+                            <p class="client-description">Онлайн-платформа русского языка</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">НН</div>
+                            <h4 class="client-name">ННТВ / Волга ТВ</h4>
+                            <p class="client-industry">Медиа</p>
+                            <p class="client-description">Региональные телеканалы</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Services & Consulting -->
+                <div class="industry-section">
+                    <h3 class="industry-title">Профессиональные услуги и Консалтинг</h3>
+                    <div class="clients-grid">
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ВР</div>
+                            <h4 class="client-name">Вертикаль</h4>
+                            <p class="client-industry">Профессиональные услуги</p>
+                            <p class="client-description">Крупная юридическая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">АК</div>
+                            <h4 class="client-name">Агенство Креативных Индустрий</h4>
+                            <p class="client-industry">Креативная экономика</p>
+                            <p class="client-description">Государственное агентство развития креативной экономики</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">SP</div>
+                            <h4 class="client-name">Strategy Partners</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Консалтинговая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">JP</div>
+                            <h4 class="client-name">J'son & Partners</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Консалтинговая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">DS</div>
+                            <h4 class="client-name">Dsight</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Консалтинговая компания</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">EV</div>
+                            <h4 class="client-name">Evolution LTD</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Консалтинговая компания, основанная выходцами из BCG</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">CV</div>
+                            <h4 class="client-name">Civitta</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Международная компания в сфере управленческого и стратегического консалтинга (офисы в 25 странах)</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">JK</div>
+                            <h4 class="client-name">Jakala</h4>
+                            <p class="client-industry">Консалтинг</p>
+                            <p class="client-description">Итальянская консалтинговая компания в сфере анализа данных и разработки программ лояльности</p>
+                        </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">СК</div>
+                            <h4 class="client-name">Сбер Капитал</h4>
+                            <p class="client-industry">Инвестиции</p>
+                            <p class="client-description">Инвестиционная компания</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="clients-section bg-light">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #1a1a1a; margin-bottom: 1.5rem;">Станьте нашим клиентом</h2>
+                    <p style="font-size: 1.1rem; color: #666; margin-bottom: 2.5rem; line-height: 1.8;">Присоединяйтесь к компаниям, которые доверяют нам решение стратегических задач</p>
+                    <a href="index-ru.html#contact" style="display: inline-block; background: linear-gradient(135deg, #F47720 0%, #FF8A3D 100%); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 15px rgba(244, 119, 32, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;">Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Senior<span class="accent">Advisors</span></div>
+                    </div>
+                    <p>Senior Advisors — консалтинговая компания, специализирующаяся на стратегическом консалтинге и корпоративных финансах с 2015 года.</p>
+                    <p>Санкт-Петербург, Россия</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <a href="service-market-research.html">Анализ рынков</a>
+                    <a href="service-strategy.html">Разработка стратегий</a>
+                    <a href="service-investment.html">Инвестиционный консалтинг</a>
+                    <a href="service-fundraising.html">Привлечение финансирования</a>
+                    <a href="service-acquisition.html">Приобретение активов</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <a href="portfolio.html">Портфолио</a>
+                    <a href="clients.html">Клиенты</a>
+                    <a href="team.html">Команда</a>
+                    <a href="index-ru.html#about">О нас</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79216464720">+7 (921) 646-47-20</a>
+                    <a href="mailto:info@s-advisors.com">info@s-advisors.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Senior Advisors. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Logo configuration - maps company names to their logo sources
+        const companyLogos = {
+            // Technology & Internet
+            'Yandex Cloud': 'https://logo.clearbit.com/cloud.yandex.com',
+            'Kaspersky': 'https://logo.clearbit.com/kaspersky.com',
+            'Positive Technologies': 'https://logo.clearbit.com/ptsecurity.com',
+            'IVI': 'logos/ivi.svg',
+            'NtechLab': 'https://logo.clearbit.com/ntechlab.com',
+            'SKAI': 'logos/skai.svg',
+            'Palabra AI': 'logos/palabra.svg',
+            'i-Digital': 'logos/i-digital.png',
+            'IVA Technologies': 'logos/iva.svg',
+            'Taptop': 'logos/taptop.svg',
+            'DaOffice': 'https://logo.clearbit.com/daoffice.ru',
+            'Smartway': 'https://logo.clearbit.com/smartway.today',
+            'Chat2Desk': 'https://logo.clearbit.com/chat2desk.com',
+            'Северсталь Инфоком': 'logos/Северсталь.png',
+            // E-commerce & Retail
+            'Автостэлс': 'https://logo.clearbit.com/autostels.ru',
+            'ZoneSmart': 'https://logo.clearbit.com/zonesmart.ru',
+            'Велодрайв': 'https://logo.clearbit.com/velodrive.ru',
+            'Birds.Build': 'logos/birdsbuild.svg',
+            'Платформа электронных компонентов': 'logos/streamparts.svg',
+            'Три цены': 'logos/tri-ceny.webp',
+            // HealthTech
+            'CheckMe': 'https://logo.clearbit.com/checkme.ru',
+            'YouTalk': 'https://logo.clearbit.com/youtalk.ru',
+            'АСНА': 'logos/АСНА.png',
+            'МГМУ им. Сеченова': 'logos/Сеченовский.png',
+            // Logistics
+            'Shiptor': 'logos/Shiptor.png',
+            'Flash': 'logos/Flash.png',
+            'Checkburo': 'logos/Checkburo.png',
+            'Whizz': 'logos/Whizz.png',
+            'Silmar / MSC': 'logos/Silmar.png',
+            '1520 Logistics': 'logos/1520.png',
+            // HoReCa
+            'Harats': 'https://logo.clearbit.com/harats.com',
+            'Polair': 'logos/Polair.png',
+            'Азимут Отели': 'logos/Азимут.png',
+            // FinTech & PropTech
+            'Zaim Express': 'logos/Займ Экспресс.png',
+            'STOKR': 'https://logo.clearbit.com/stokr.io',
+            'Casas Finance': 'logos/Casas Finance.png',
+            'Cardoo': 'logos/Cardoo.png',
+            'Restate': 'https://logo.clearbit.com/restate.ru',
+            'RBI': 'logos/RBI.png',
+            'Армо-групп': 'logos/Армо.png',
+            // Production
+            'Ростех': 'https://logo.clearbit.com/rostec.ru',
+            'ERG': 'https://logo.clearbit.com/eurasianresources.lu',
+            'Bitrobotics': 'logos/Bitrobotics.png',
+            'Moley Robotics': 'logos/Moley.png',
+            'Ansaligy': 'logos/Ansaligy.png',
+            'РТРБ': 'logos/РТРБ.png',
+            'Русхлеб': 'logos/Русхлеб.png',
+            'Сыры "Естественно"': 'logos/Естественно.png',
+            'АБЗ-1': 'logos/АБЗ 1.png',
+            'Hongjing Electronics': 'logos/Hongjing.png',
+            // Media
+            'Матч ТВ': 'https://logo.clearbit.com/matchtv.ru',
+            'Грамота.ру': 'https://logo.clearbit.com/gramota.ru',
+            'ННТВ / Волга ТВ': 'logos/ННТВ.png',
+            // Consulting
+            'Strategy Partners': 'logos/Strategy Partners.png',
+            'J\'son & Partners': 'https://logo.clearbit.com/json.tv',
+            'Dsight': 'https://logo.clearbit.com/dsight.ru',
+            'Evolution LTD': 'logos/Evolution.png',
+            'Civitta': 'logos/Civitta.png',
+            'Jakala': 'https://logo.clearbit.com/jakala.com',
+            'Вертикаль': 'logos/Вертикаль.png',
+            'Агенство Креативных Индустрий': 'logos/Агентство креативных индустрий .png',
+            'Сбер Капитал': 'logos/Сбербанк Капитал.png'
+        };
+
+        // Initialize logos on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const clientCards = document.querySelectorAll('.client-card');
+
+            clientCards.forEach(card => {
+                const companyName = card.querySelector('.client-name').textContent.trim();
+                const placeholderDiv = card.querySelector('.client-logo-placeholder');
+
+                if (companyLogos[companyName]) {
+                    // Create image element
+                    const img = document.createElement('img');
+                    img.src = companyLogos[companyName];
+                    img.alt = companyName + ' logo';
+                    img.className = 'client-logo';
+
+                    // Create container
+                    const container = document.createElement('div');
+                    container.className = 'client-logo-container';
+
+                    // Handle loading errors - fallback to company initials
+                    img.onerror = function() {
+                        const initials = companyName.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
+                        const fallbackPlaceholder = placeholderDiv.cloneNode(true);
+                        fallbackPlaceholder.textContent = initials;
+                        fallbackPlaceholder.style.fontSize = initials.length > 2 ? '1.5rem' : '2rem';
+                        container.appendChild(fallbackPlaceholder);
+                        img.remove();
+                    };
+
+                    // Handle successful loading
+                    img.onload = function() {
+                        // Logo loaded successfully
+                    };
+
+                    container.appendChild(img);
+                    placeholderDiv.parentNode.replaceChild(container, placeholderDiv);
+                } else {
+                    // Wrap placeholder in container for consistency - show company initials
+                    const initials = companyName.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
+                    const container = document.createElement('div');
+                    container.className = 'client-logo-container';
+                    const initialsPlaceholder = placeholderDiv.cloneNode(true);
+                    initialsPlaceholder.textContent = initials;
+                    initialsPlaceholder.style.fontSize = initials.length > 2 ? '1.5rem' : '2rem';
+                    container.appendChild(initialsPlaceholder);
+                    placeholderDiv.parentNode.replaceChild(container, placeholderDiv);
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

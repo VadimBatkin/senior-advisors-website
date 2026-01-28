@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Senior Advisors</title>
+    <link rel="stylesheet" href="styles-ru.css">
+    <link rel="stylesheet" href="styles-portfolio.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index-ru.html" class="logo">
+                        <img src="logos/Senior Advisors.png" alt="Senior Advisors" class="logo-image">
+                        <div class="logo-text">Senior<span class="accent">Advisors</span></div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index-ru.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="index-ru.html#services" class="nav-link">Услуги</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-market-research.html">Анализ рынков</a></li>
+                            <li><a href="service-strategy.html">Разработка стратегий</a></li>
+                            <li><a href="service-investment.html">Инвестиционный консалтинг</a></li>
+                            <li><a href="service-fundraising.html">Привлечение финансирования</a></li>
+                            <li><a href="service-acquisition.html">Приобретение активов</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link active">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="clients.html" class="nav-link">Клиенты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">Команда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-ru.html#contact" class="nav-link">Контакты</a>
+                    </li>
+                    <li class="nav-item language-switcher">
+                        <a href="portfolio-en.html" class="nav-link">EN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-ru.html#contact" class="cta-button">Получить консультацию</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Наши проекты</h1>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="portfolio-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="all">Все проекты</button>
+                <button class="tab-button" data-category="ma">M&A и инвестиционный консалтинг</button>
+                <button class="tab-button" data-category="strategy">Стратегия и анализ рынка</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- M&A Projects -->
+    <section class="portfolio-section" data-category="ma">
+        <div class="container">
+            <h2 class="section-title">M&A проекты</h2>
+            <div class="portfolio-grid">
+                <!-- CКАУТ -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">TransportTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="logos/skai.svg" alt="SKAI" class="company-logo">
+                            <h3 class="project-title">SKAI</h3>
+                            <p class="project-description">Российская компания-вендор решений в сфере автомобильной телематики</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Привлечение инвестиций от стратегического инвестора МТС</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">5-10 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Cardoo -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">MobilityTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="logos/Cardoo.png" alt="Cardoo" class="company-logo">
+                            <h3 class="project-title">Cardoo</h3>
+                            <p class="project-description">Платформа бездепозитной аренды автомобилей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Привлечение инвестиций от венчурных фондов на Кипре</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- CheckMe -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">HealthTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/checkme.ru" alt="CheckMe" class="company-logo">
+                            <h3 class="project-title">CheckMe</h3>
+                            <p class="project-description">Онлайн-платформа для бронирования медицинских услуг</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Полная продажа бизнеса стратегическому покупателю КАПИТАЛ Life</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- Автостэлс -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">E-commerce</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/autostels.ru" alt="Автостэлс" class="company-logo">
+                            <h3 class="project-title">Автостэлс</h3>
+                            <p class="project-description">Один из лидеров в сфере кросс-докинга автозапчастей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Привлечение инвестиций от private equity фонда Северсталь</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- YouTalk -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">HealthTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/youtalk.ru" alt="YouTalk" class="company-logo">
+                            <h3 class="project-title">YouTalk</h3>
+                            <p class="project-description">Онлайн-сервис психологической помощи</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Полная продажа бизнеса стратегическому покупателю</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- ZoneSmart -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">E-commerce</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/zonesmart.ru" alt="ZoneSmart" class="company-logo">
+                            <h3 class="project-title">ZoneSmart</h3>
+                            <p class="project-description">Агентство и SAAS-сервис в сфере торговли на маркетплейсах</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Полная продажа бизнеса стратегическому покупателю Кокос Групп</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Railway Logistics -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Transport & Logistics</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Крупный ж/д перевозчик</h3>
+                            <p class="project-description">Комплексное сопровождение сделки по продаже бизнеса</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Полная продажа бизнеса стратегическому покупателю</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">50-100 млн $</div>
+                    </div>
+                </div>
+
+                <!-- DaOffice -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Enterprise Software</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/daoffice.ru" alt="DaOffice" class="company-logo">
+                            <h3 class="project-title">DaOffice</h3>
+                            <p class="project-description">Корпоративная социальная сеть</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Полная продажа бизнеса стратегическому покупателю i-Digital</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">до 1 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Regional Media Merger -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Медиа</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Слияние активов</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Региональные медийные активы</h3>
+                            <p class="project-description">Сделка по слиянию двух медийных активов с участием региональных властей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Структурирование и сопровождение сделки по слиянию двух ТВ каналов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">5-10 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Device Subscription Service -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Consumer Tech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="logos/Whizz.png" alt="Whizz" class="company-logo">
+                            <h3 class="project-title">Whizz</h3>
+                            <p class="project-description">Сервис подписки на девайсы</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Привлечение инвестиционного раунда от бизнес-ангелов и фондов для экспансии бизнеса в США</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">до 1 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Railway JV -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Transport & Logistics</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Создание СП</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Крупный ж/д перевозчик</h3>
+                            <p class="project-description">Совместное предприятие в сфере железнодорожных перевозок</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Ведение переговоров и структурирование сделки по созданию совместного предприятия, разработка финансовой модели для привлечения финансирования, оценка стоимости</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">10-50 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Taptop -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">DesignTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="logos/taptop.svg" alt="Taptop" class="company-logo">
+                            <h3 class="project-title">Taptop</h3>
+                            <p class="project-description">Визуальный редактор кода для дизайнеров</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка финансовой модели и инвестиционных материалов для привлечения раунда финансирования</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- Harats -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">HoReCa</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/harats.com" alt="Harats" class="company-logo">
+                            <h3 class="project-title">Harats</h3>
+                            <p class="project-description">Крупнейшая международная сеть пабов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка инвестиционных материалов для привлечения инвесторов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- Restate -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">PropTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Привлечение инвестиций</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/restate.ru" alt="Restate" class="company-logo">
+                            <h3 class="project-title">Restate</h3>
+                            <p class="project-description">Крупный классифайд недвижимости</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка финансовой модели и инвестиционной презентации для привлечения финансирования</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- Shiptor -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Logistics Tech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="logos/Shiptor.png" alt="Shiptor" class="company-logo">
+                            <h3 class="project-title">Shiptor</h3>
+                            <p class="project-description">Логистическая платформа для электронной торговли</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Инвестиционная подготовка для продажи бизнеса</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+
+                <!-- Checkburo -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">AutoTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Продажа бизнеса</div>
+                        <div class="company-info">
+                            <img src="logos/Checkburo.png" alt="Checkburo" class="company-logo">
+                            <h3 class="project-title">Checkburo</h3>
+                            <p class="project-description">Сервис проверки автомобилей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Инвестиционная подготовка для продажи компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Confidential</div>
+                    </div>
+                </div>
+                <!-- Grain Terminal -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Агробизнес</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/1520.png" alt="1520 Logistics" class="company-logo">
+                            <h3 class="project-title">1520 Logistics</h3>
+                            <p class="project-description">Крупная логистическая компания</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Коммерческий due diligence и инвестиционная оценка перевалочного зернового терминала</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Sand Quarry -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Добыча полезных ископаемых</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Песчаный карьер</h3>
+                            <p class="project-description">Группа частных инвесторов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Коммерческий due diligence и инвестиционная оценка песчаного карьера</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Real Estate Holdings -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Недвижимость</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Армо.png" alt="Армо-групп" class="company-logo">
+                            <h3 class="project-title">Армо-групп</h3>
+                            <p class="project-description">Крупный холдинг по управлению недвижимостью</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Поиск целей для приобретения в сегменте facility management</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Development Company -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Недвижимость</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/RBI.png" alt="RBI" class="company-logo">
+                            <h3 class="project-title">RBI</h3>
+                            <p class="project-description">Крупная девелоперская компания</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Поиск целей для приобретения в сегменте девелопмента, facility management, proptech</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">5-10 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Alcohol Production -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Производство алкоголя</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Скандинавская компания</h3>
+                            <p class="project-description">Private equity fund</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Коммерческий due diligence скандинавского производителя алкогольных напитков</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">10–50 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Publishing -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Издательская деятельность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Прибалтийское издательство</h3>
+                            <p class="project-description">Private equity fund</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Коммерческий due diligence книжного издательства в Прибалтике</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">5–10 млн $</div>
+                    </div>
+                </div>
+
+                <!-- Metal Construction -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Производство</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Производитель металлоконструкций</h3>
+                            <p class="project-description">Группа частных инвесторов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Коммерческий, инвестиционный и финансовый due diligence компании по производству металлоконструкций</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">5–10 млн $</div>
+                    </div>
+                </div>
+
+                <!-- B2B Communications -->
+                <div class="portfolio-card" data-type="ma">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Enterprise Software</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Buy-side Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">B2B коммуникации</h3>
+                            <p class="project-description">Крупный холдинг в сфере решений для коммуникации</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Поиск целей для приобретения в сегменте b2b коммуникаций</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">1-5 млн $</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Projects -->
+    <section class="portfolio-section" data-category="strategy">
+        <div class="container">
+            <h2 class="section-title">Стратегические проекты</h2>
+            <div class="portfolio-grid">
+                <!-- Крупный разработчик офисного ПО -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Enterprise Software</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Крупный разработчик офисного ПО</h3>
+                            <p class="project-description">Разработчик корпоративного офисного программного обеспечения</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка корпоративного офисного ПО в России</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Исследование рынка для стратегических решений</div>
+                    </div>
+                </div>
+
+                <!-- NtechLab -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">AI & Computer Vision</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/ntechlab.com" alt="NtechLab" class="company-logo">
+                            <h3 class="project-title">NtechLab</h3>
+                            <p class="project-description">Российская IT-компания, разрабатывающая продукты в сфере искусственного интеллекта</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Стратегический департамент на аутсорсе: сопровождение компании в разработке стратегии</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Выручка выросла в 15+ раз, привлечено >1 млрд рублей инвестиций</div>
+                    </div>
+                </div>
+
+                <!-- Yandex Cloud -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Cloud Infrastructure</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/cloud.yandex.com" alt="Yandex Cloud" class="company-logo">
+                            <h3 class="project-title">Yandex Cloud</h3>
+                            <p class="project-description">Облачная платформа компании Yandex</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Исследование рынка облачных сервисов, расчет объема рынка, анализ конкурентов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Стратегическое позиционирование на рынке</div>
+                    </div>
+                </div>
+
+                <!-- Kaspersky -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Кибербезопасность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/kaspersky.com" alt="Kaspersky" class="company-logo">
+                            <h3 class="project-title">Kaspersky</h3>
+                            <p class="project-description">Крупнейшая российская IT-компания, разрабатывающая продукты в области кибербезопасности</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка go-to-market стратегии и построение финансовой модели нового направления бизнеса</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Проект успешно одобрен Советом Директоров</div>
+                    </div>
+                </div>
+
+                <!-- IVI -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Онлайн-развлечения</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/ivi.svg" alt="IVI" class="company-logo">
+                            <h3 class="project-title">IVI</h3>
+                            <p class="project-description">Лидирующий игрок на российском рынке онлайн-кинотеатров</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Исследование рынка развлечений, международный бенчмаркинг с целью поиска новых точек роста бизнеса</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Выбраны новые направления для развития бизнеса</div>
+                    </div>
+                </div>
+
+                <!-- Автостэлс Strategy -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">E-commerce</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/autostels.ru" alt="Автостэлс" class="company-logo">
+                            <h3 class="project-title">Автостэлс</h3>
+                            <p class="project-description">Крупный B2B-ecom дилер автозапчастей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Стратегический департамент на аутсорсинге (помощь со стратегическим планированием и операционной аналитикой)</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">За 2 года сотрудничества - ежегодный рост выручки составляет ±35%</div>
+                    </div>
+                </div>
+
+                <!-- Data Center Operator -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Cloud Infrastructure</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research & Strategy</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Оператор ЦОД</h3>
+                            <p class="project-description">Один из крупнейших в России операторов сети коммерческих ЦОДов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка ЦОДов в России, разработка рекомендаций по стратегии развития компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Более четкое видение дальнейшего развития компании</div>
+                    </div>
+                </div>
+
+                <!-- Electronic Components Platform -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">E-commerce</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/streamparts.svg" alt="Платформа электронных компонентов" class="company-logo">
+                            <h3 class="project-title">Платформа электронных компонентов</h3>
+                            <p class="project-description">Онлайн-платформа для поиска, комплектации и заказа электронных компонентов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Исследование рынка электронных компонентов, разработка позиционирования и маркетинговой стратегии компании, разработка финансовой модели</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Запуск проекта с нуля и достижение выручки 2 млрд рублей</div>
+                    </div>
+                </div>
+
+                <!-- Positive Technologies -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Кибербезопасность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Data Analytics</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/ptsecurity.com" alt="Positive Technologies" class="company-logo">
+                            <h3 class="project-title">Positive Technologies</h3>
+                            <p class="project-description">Российская компания, специализирующаяся на разработке решений в сфере информационной безопасности</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Формирование базы из топ-3000 компаний в РФ и обогащение ее разными метриками (парсинг данных со Спарка, hh, сложная БД)</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Фокусировки усилий департамента маркетинга и продаж</div>
+                    </div>
+                </div>
+
+                <!-- Unified Communications Company -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Enterprise Software</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Разработчик систем ВКС</h3>
+                            <p class="project-description">Крупный российский разработчик систем ВКС</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Исследование рынка Unified Communications, разработка рекомендаций для стратегии компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Проект успешно реализован</div>
+                    </div>
+                </div>
+
+                <!-- i-Digital -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Телекоммуникации</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/i-digital.png" alt="i-Digital" class="company-logo">
+                            <h3 class="project-title">i-Digital</h3>
+                            <p class="project-description">IT-компания, входящая в TOP 5 ведущих SMS-агрегаторов в России</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ страновых рынков для международной экспансии, оценка рынка, поиск новых точек роста, разработка модели монетизации проекта</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Выбраны новые направления для развития бизнеса</div>
+                    </div>
+                </div>
+
+                <!-- Polair -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Производство оборудования</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Polair.png" alt="Polair" class="company-logo">
+                            <h3 class="project-title">Polair</h3>
+                            <p class="project-description">Крупнейший производитель профессионального холодильного оборудования</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка, генерация и скоринг новых стратегических направлений, в том числе за пределами ключевого сегмента компании, подготовка стратегического роудмэпа</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработан стратегический роудмэп развития компании</div>
+                    </div>
+                </div>
+
+                <!-- Gramota.ru -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">EdTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/gramota.ru" alt="Грамота.ру" class="company-logo">
+                            <h3 class="project-title">Грамота.ру</h3>
+                            <p class="project-description">Онлайн-платформа русского языка</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Проект по стратегическому развитию онлайн-платформы русского языка</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана стратегия развития платформы</div>
+                    </div>
+                </div>
+
+                <!-- Hongjing Electronics -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Электроника</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/Hongjing.png" alt="Hongjing Electronics" class="company-logo">
+                            <h3 class="project-title">Hongjing Electronics</h3>
+                            <p class="project-description">Крупный китайский производитель и дистрибьютор электронного оборудования</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Исследование российского рынка фискальных накопителей и тахографов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Оценка перспектив российского рынка</div>
+                    </div>
+                </div>
+
+                <!-- Real Estate Aggregator -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">PropTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Агрегатор недвижимости</h3>
+                            <p class="project-description">Один из лидирующих агрегаторов в сфере недвижимости</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Детальная сегментация, оценка объемов и прогноз рынка жилой и коммерческой недвижимости</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Прогноз развития рынка недвижимости</div>
+                    </div>
+                </div>
+
+                <!-- Severstal Infocom -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">IT Services</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Северсталь.png" alt="Северсталь Инфоком" class="company-logo">
+                            <h3 class="project-title">Северсталь Инфоком</h3>
+                            <p class="project-description">Центр информационных и коммуникационных технологий компании «Северсталь»</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Поиск новых инновационных направлений развития бизнеса, приоритезация стратегических инициатив</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Определены приоритетные направления инноваций</div>
+                    </div>
+                </div>
+
+                <!-- Birds.Build -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">B2B E-commerce</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/birdsbuild.svg" alt="Birds.Build" class="company-logo">
+                            <h3 class="project-title">Birds.Build</h3>
+                            <p class="project-description">Маркетплейс для бизнеса. Торговая B2B площадка</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Проработка стратегических инициативы, разработка новой стратегии развития компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана новая стратегия развития</div>
+                    </div>
+                </div>
+
+                <!-- Match TV -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Медиа</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/matchtv.ru" alt="Матч ТВ" class="company-logo">
+                            <h3 class="project-title">Матч ТВ</h3>
+                            <p class="project-description">Один из федеральных телеканалов РФ</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка стратегии развития и новой бизнес-модели с учетом опыта компании на рынке</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана новая бизнес-модель канала</div>
+                    </div>
+                </div>
+
+                <!-- Flash Logistics -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Логистика</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Flash.png" alt="Flash" class="company-logo">
+                            <h3 class="project-title">Flash</h3>
+                            <p class="project-description">Одна из крупнейших в России логистических компаний в сфере автомобильных перевозок</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка автомобильных перевозок в России, разработка стратегических инициатив, разработка стратегии развития и финансовой модели компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана стратегия развития компании</div>
+                    </div>
+                </div>
+
+                <!-- Medical Clinic Network -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Здравоохранение</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Региональная сеть клиник</h3>
+                            <p class="project-description">Крупная региональная сеть многопрофильных медицинских клиник</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка частной медицины в России, разработка стратегических инициатив, разработка стратегии развития и финансовой модели компании</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана стратегия роста сети клиник</div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Chain -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">HoReCa</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <h3 class="project-title">Федеральная сеть общепита</h3>
+                            <p class="project-description">Федеральная сеть общественного питания</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка стратегических инициатив, разработка стратегии развития и финансовой модели компании, анализ рынка общественного питания в России</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана стратегия развития сети</div>
+                    </div>
+                </div>
+
+                <!-- Vertikal -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Профессиональные услуги</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research & Strategy</div>
+                        <div class="company-info">
+                            <img src="logos/Вертикаль.png" alt="Вертикаль" class="company-logo">
+                            <h3 class="project-title">Вертикаль</h3>
+                            <p class="project-description">Крупная юридическая компания</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Сайзинг и анализ рынка специальных ситуаций, разработка стратегического позиционирования</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработано стратегическое позиционирование</div>
+                    </div>
+                </div>
+
+                <!-- Azimut Tourism -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Гостиничный бизнес</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/Азимут.png" alt="Азимут Отели" class="company-logo">
+                            <h3 class="project-title">Азимут Отели</h3>
+                            <p class="project-description">Крупная сеть отелей</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ туристического потенциала Калининградской области и подготовка бизнес-планов строительства отелей в разных регионах</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработаны бизнес-планы для новых отелей</div>
+                    </div>
+                </div>
+
+                <!-- Zaim Express -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">FinTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Займ Экспресс.png" alt="Zaim Express" class="company-logo">
+                            <h3 class="project-title">Zaim Express</h3>
+                            <p class="project-description">Крупная МФО</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ и выбор новых стратегических направлений развития</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Определены новые стратегические направления</div>
+                    </div>
+                </div>
+
+                <!-- Moley Robotics -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Robotics</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/Moley.png" alt="Moley Robotics" class="company-logo">
+                            <h3 class="project-title">Moley Robotics</h3>
+                            <p class="project-description">Роботизированные кухни на рынке Великобритании</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Подготовка финансовых моделей, анализ рынка роботизированных кухонь</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана финансовая модель и анализ рынка</div>
+                    </div>
+                </div>
+
+                <!-- Bitrobotics -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">FoodTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Bitrobotics.png" alt="Bitrobotics" class="company-logo">
+                            <h3 class="project-title">Bitrobotics</h3>
+                            <p class="project-description">Один из лидеров в сфере роботизации пищевой промышленности</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Подготовка финансовой модели и инвестиционных материалов, анализ рынка роботизации пищевой промышленности</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Подготовлены инвестиционные материалы</div>
+                    </div>
+                </div>
+
+                <!-- Ruskheb -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Пищевая промышленность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Financial Modeling</div>
+                        <div class="company-info">
+                            <img src="logos/Русхлеб.png" alt="Русхлеб" class="company-logo">
+                            <h3 class="project-title">Русхлеб</h3>
+                            <p class="project-description">Крупный производитель хлебопекарных ингредиентов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка финансовой модели строительства завода</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана финансовая модель завода</div>
+                    </div>
+                </div>
+
+                <!-- Palabra AI -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">AI Technology</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/palabra.svg" alt="Palabra AI" class="company-logo">
+                            <h3 class="project-title">Palabra AI</h3>
+                            <p class="project-description">AI-перевод речи в реальном времени</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка и перспективных направлений развития AI-перевода</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Определены перспективные направления развития</div>
+                    </div>
+                </div>
+
+                <!-- Silmar MSC -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Логистика</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Project Analysis</div>
+                        <div class="company-info">
+                            <img src="logos/Silmar.png" alt="Silmar / MSC" class="company-logo">
+                            <h3 class="project-title">Silmar / MSC</h3>
+                            <p class="project-description">Международный оператор контейнерных перевозок</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ и подготовка проекта по железнодорожным контейнерным перевозкам</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Подготовлен проект железнодорожных перевозок</div>
+                    </div>
+                </div>
+
+                <!-- STOKR -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">FinTech</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Financial Modeling</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/stokr.io" alt="STOKR" class="company-logo">
+                            <h3 class="project-title">STOKR</h3>
+                            <p class="project-description">Немецкая платформа для токенизации активов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Подготовка финансовой модели платформы токенизации</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана финансовая модель</div>
+                    </div>
+                </div>
+
+                <!-- Sechenov University -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Фармацевтика</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/Сеченовский.png" alt="МГМУ им. Сеченова" class="company-logo">
+                            <h3 class="project-title">МГМУ им. Сеченова</h3>
+                            <p class="project-description">Первый Московский государственный медицинский университет</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Анализ рынка разработки новых лекарств и препаратов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Проведен анализ фармацевтического рынка</div>
+                    </div>
+                </div>
+
+                <!-- ERG Kazakhstan -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Промышленность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/eurasianresources.lu" alt="ERG" class="company-logo">
+                            <h3 class="project-title">ERG</h3>
+                            <p class="project-description">Крупнейший казахстанский холдинг в сфере добычи и переработки природных ресурсов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Сайзинг и анализ рынка автозапчастей для спецтехники одного из дочерних предприятий группы</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Проведен сайзинг рынка автозапчастей</div>
+                    </div>
+                </div>
+
+                <!-- Creative Industries Agency -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Креативная экономика</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="logos/Агентство креативных индустрий .png" alt="Агенство Креативных Индустрий" class="company-logo">
+                            <h3 class="project-title">Агенство Креативных Индустрий</h3>
+                            <p class="project-description">Государственное агентство развития креативной экономики</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка концепции проекта Moscow Fashion Cluster</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана концепция кластера</div>
+                    </div>
+                </div>
+
+                <!-- Siry Estestvenno -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Пищевая промышленность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Financial Modeling</div>
+                        <div class="company-info">
+                            <img src="logos/Естественно.png" alt="Сыры &quot;Естественно&quot;" class="company-logo">
+                            <h3 class="project-title">Сыры "Естественно"</h3>
+                            <p class="project-description">Дистрибутор молочной продукции</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка финансовой модели и бюджета</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана финансовая модель</div>
+                    </div>
+                </div>
+
+                <!-- ABZ-1 -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Производство</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Market Research</div>
+                        <div class="company-info">
+                            <img src="logos/АБЗ 1.png" alt="АБЗ-1" class="company-logo">
+                            <h3 class="project-title">АБЗ-1</h3>
+                            <p class="project-description">Один из крупнейших производителей асфальто-бетона</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Сайзинг и анализ рынка асфальто-бетона</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Проведен анализ рынка асфальто-бетона</div>
+                    </div>
+                </div>
+
+                <!-- Velodrive -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Ритейл</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/velodrive.ru" alt="Велодрайв" class="company-logo">
+                            <h3 class="project-title">Велодрайв</h3>
+                            <p class="project-description">Крупнейшая специализированная сеть велосипедных магазинов</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Разработка стратегии развития, анализ и инвестиционная подготовка нескольких новых проектов</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Разработана стратегия развития сети</div>
+                    </div>
+                </div>
+
+                <!-- Rostec -->
+                <div class="portfolio-card" data-type="strategy">
+                    <div class="deal-status completed"></div>
+                    <div class="card-header">
+                        <div class="industry-tag">Промышленность</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="deal-type">Strategic Advisory</div>
+                        <div class="company-info">
+                            <img src="https://logo.clearbit.com/rostec.ru" alt="Ростех" class="company-logo">
+                            <h3 class="project-title">Ростех</h3>
+                            <p class="project-description">Крупнейшая промышленно-технологическая группа</p>
+                        </div>
+                        <div class="deal-separator"></div>
+                        <div class="deal-details">
+                            <div class="project-details">Ряд проектов в сфере анализа рынка, подготовки финансовых моделей и стратегий развития</div>
+                        </div>
+                    </div>
+                    <div class="deal-footer">
+                        <div class="deal-amount">Выполнен комплекс стратегических проектов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Senior<span class="accent">Advisors</span></div>
+                    </div>
+                    <p>Senior Advisors — консалтинговая компания, специализирующаяся на стратегическом консалтинге и корпоративных финансах с 2015 года.</p>
+                    <p>Санкт-Петербург, Россия</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <a href="service-market-research.html">Анализ рынков</a>
+                    <a href="service-strategy.html">Разработка стратегий</a>
+                    <a href="service-investment.html">Инвестиционный консалтинг</a>
+                    <a href="service-fundraising.html">Привлечение финансирования</a>
+                    <a href="service-acquisition.html">Приобретение активов</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Компания</h4>
+                    <a href="portfolio.html">Портфолио</a>
+                    <a href="clients.html">Клиенты</a>
+                    <a href="team.html">Команда</a>
+                    <a href="index-ru.html#about">О нас</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79216464720">+7 (921) 646-47-20</a>
+                    <a href="mailto:info@s-advisors.com">info@s-advisors.com</a>
+                    <a href="https://www.s-advisors.com">www.s-advisors.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Senior Advisors. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

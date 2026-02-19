@@ -469,6 +469,13 @@
                             <p class="client-industry">Ритейл</p>
                             <p class="client-description">Лидирующий ритейлер формата фиксированных цен в Республике Беларусь</p>
                         </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">RI</div>
+                            <h4 class="client-name">Rimi</h4>
+                            <p class="client-industry">Ритейл</p>
+                            <p class="client-description">Крупная сеть супермаркетов в странах Балтии</p>
+                        </div>
                     </div>
                 </div>
 
@@ -743,6 +750,13 @@
                             <p class="client-industry">Производство</p>
                             <p class="client-description">Производитель уходовой косметики премиум-класса</p>
                         </div>
+
+                        <div class="client-card">
+                            <div class="client-logo-placeholder">ОН</div>
+                            <h4 class="client-name">Ондулин</h4>
+                            <p class="client-industry">Строительные материалы</p>
+                            <p class="client-description">Производитель кровельных и строительных материалов</p>
+                        </div>
                     </div>
                 </div>
 
@@ -899,30 +913,31 @@
         // Logo configuration - maps company names to their logo sources
         const companyLogos = {
             // Technology & Internet
-            'Yandex Cloud': 'https://logo.clearbit.com/cloud.yandex.com',
-            'Kaspersky': 'https://logo.clearbit.com/kaspersky.com',
-            'Positive Technologies': 'https://logo.clearbit.com/ptsecurity.com',
+            'Yandex Cloud': 'logos/Yandex Cloud.png',
+            'Kaspersky': 'logos/Kaspersky.png',
+            'Positive Technologies': 'logos/Positive Technologies.png',
             'IVI': 'logos/ivi.svg',
-            'NtechLab': 'https://logo.clearbit.com/ntechlab.com',
+            'NtechLab': 'logos/Ntechlab.png',
             'SKAI': 'logos/skai.svg',
             'Palabra AI': 'logos/palabra.svg',
             'i-Digital': 'logos/i-digital.png',
             'IVA Technologies': 'logos/iva.svg',
             'Taptop': 'logos/taptop.svg',
-            'DaOffice': 'https://logo.clearbit.com/daoffice.ru',
-            'Smartway': 'https://logo.clearbit.com/smartway.today',
-            'Chat2Desk': 'https://logo.clearbit.com/chat2desk.com',
+            'DaOffice': 'logos/Daoffice.png',
+            'Smartway': 'logos/Smartway.png',
+            'Chat2Desk': 'logos/Chat2Desk.png',
             'Северсталь Инфоком': 'logos/Северсталь.png',
             // E-commerce & Retail
-            'Автостэлс': 'https://logo.clearbit.com/autostels.ru',
-            'ZoneSmart': 'https://logo.clearbit.com/zonesmart.ru',
-            'Велодрайв': 'https://logo.clearbit.com/velodrive.ru',
+            'Автостэлс': 'logos/Автостэлс.png',
+            'ZoneSmart': 'logos/Zonesmart.png',
+            'Велодрайв': 'logos/Велодрайв.png',
             'Birds.Build': 'logos/birdsbuild.svg',
             'Платформа электронных компонентов': 'logos/streamparts.svg',
             'Три цены': 'logos/tri-ceny.webp',
+            'Rimi': 'logos/Rimi.png',
             // HealthTech
-            'CheckMe': 'https://logo.clearbit.com/checkme.ru',
-            'YouTalk': 'https://logo.clearbit.com/youtalk.ru',
+            'CheckMe': 'logos/Checkme.png',
+            'YouTalk': 'logos/Youtalk.png',
             'АСНА': 'logos/АСНА.png',
             'МГМУ им. Сеченова': 'logos/Сеченовский.png',
             // Logistics
@@ -933,39 +948,40 @@
             'Silmar / MSC': 'logos/Silmar.png',
             '1520 Logistics': 'logos/1520.png',
             // HoReCa
-            'Harats': 'https://logo.clearbit.com/harats.com',
+            'Harats': 'logos/Harats.png',
             'Polair': 'logos/Polair.png',
             'Азимут Отели': 'logos/Азимут.png',
             // FinTech & PropTech
             'Zaim Express': 'logos/Займ Экспресс.png',
-            'STOKR': 'https://logo.clearbit.com/stokr.io',
+            'STOKR': 'logos/Stokr.png',
             'Casas Finance': 'logos/Casas Finance.png',
             'Cardoo': 'logos/Cardoo.png',
-            'Restate': 'https://logo.clearbit.com/restate.ru',
+            'Restate': 'logos/Restate.png',
             'RBI': 'logos/RBI.png',
             'Армо-групп': 'logos/Армо.png',
             // Production
-            'Ростех': 'https://logo.clearbit.com/rostec.ru',
-            'ERG': 'https://logo.clearbit.com/eurasianresources.lu',
+            'Ростех': 'logos/Ростех.png',
+            'ERG': 'logos/ERG.png',
             'Bitrobotics': 'logos/Bitrobotics.png',
             'Moley Robotics': 'logos/Moley.png',
             'Ansaligy': 'logos/Ansaligy.png',
+            'Ондулин': 'logos/Ондулин.png',
             'РТРБ': 'logos/РТРБ.png',
             'Русхлеб': 'logos/Русхлеб.png',
             'Сыры "Естественно"': 'logos/Естественно.png',
             'АБЗ-1': 'logos/АБЗ 1.png',
             'Hongjing Electronics': 'logos/Hongjing.png',
             // Media
-            'Матч ТВ': 'https://logo.clearbit.com/matchtv.ru',
-            'Грамота.ру': 'https://logo.clearbit.com/gramota.ru',
+            'Матч ТВ': 'logos/Матч ТВ.png',
+            'Грамота.ру': 'logos/Грамота ру.png',
             'ННТВ / Волга ТВ': 'logos/ННТВ.png',
             // Consulting
             'Strategy Partners': 'logos/Strategy Partners.png',
-            'J\'son & Partners': 'https://logo.clearbit.com/json.tv',
-            'Dsight': 'https://logo.clearbit.com/dsight.ru',
+            'J\'son & Partners': 'logos/Json Partners.png',
+            'Dsight': 'logos/Dsight.png',
             'Evolution LTD': 'logos/Evolution.png',
             'Civitta': 'logos/Civitta.png',
-            'Jakala': 'https://logo.clearbit.com/jakala.com',
+            'Jakala': 'logos/Jakala.png',
             'Вертикаль': 'logos/Вертикаль.png',
             'Агенство Креативных Индустрий': 'logos/Агентство креативных индустрий .png',
             'Сбер Капитал': 'logos/Сбербанк Капитал.png'

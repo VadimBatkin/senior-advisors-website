@@ -1,11 +1,20 @@
 # Senior Advisors Website
 
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen)
-![Version](https://img.shields.io/badge/version-3.0-blue)
+![Version](https://img.shields.io/badge/version-3.2-blue)
 ![Pages](https://img.shields.io/badge/pages-18-orange)
 ![Languages](https://img.shields.io/badge/languages-2-green)
 
 Professional bilingual consulting company website for Senior Advisors - a leading M&A advisory and strategic consulting firm.
+
+## 🌐 Live Website
+
+**The website is now live on GitHub Pages!**
+
+- **Russian version**: https://vadimbatkin.github.io/senior-advisors-website/index-ru.html
+- **English version**: https://vadimbatkin.github.io/senior-advisors-website/index-en.html
+
+Use the language switcher (RU/EN) to toggle between languages on any page.
 
 ## 📋 Project Overview
 
@@ -14,21 +23,26 @@ This is a complete, multi-page, **bilingual website** (Russian & English) showca
 ### Key Statistics
 - **18 HTML Pages** - 9 pages in Russian + 9 pages in English (complete bilingual coverage)
 - **2 Languages** - Full Russian and English versions with language switcher
-- **67+ Clients** - Across 10 industry categories
+- **69+ Clients** - Across 10 industry categories
 - **62+ Projects** - Detailed case studies with tombstone-style presentation
 - **9 Team Members** - Partners and consultants with detailed profiles
 - **5 Service Areas** - Market research, strategy, investment, fundraising, acquisitions
 
 ## 🚀 Quick Start
 
-### Option 1: Open Directly in Browser (Simplest)
+### Option 1: View Live Website (Easiest)
+Visit the live website hosted on GitHub Pages:
+- **Russian**: https://vadimbatkin.github.io/senior-advisors-website/index-ru.html
+- **English**: https://vadimbatkin.github.io/senior-advisors-website/index-en.html
+
+### Option 2: Open Directly in Browser (Local)
 1. Navigate to the `SA website` folder
 2. **Russian version:** Double-click `index-ru.html`
 3. **English version:** Double-click `index-en.html`
 4. Use the **RU/EN** language switcher in the navigation menu to switch between languages
 5. Navigate through all pages using the menu
 
-### Option 2: Local Web Server (Recommended for best experience)
+### Option 3: Local Web Server (Recommended for development)
 ```bash
 # Navigate to the project folder
 cd "path/to/SA website"
@@ -43,10 +57,11 @@ python -m http.server 8000
 
 **Note:** Using a local server is recommended for proper logo loading via Clearbit API.
 
-### Option 3: Share with Colleagues
-1. Extract the ZIP file (`Senior_Advisors_Website.zip`)
-2. Follow instructions in `ИНСТРУКЦИЯ.txt` (included)
-3. Can be accessed locally or via network (192.168.x.x:8000)
+### Option 4: Share with Colleagues
+1. Share the GitHub Pages URL (see Option 1 above)
+2. Or extract the ZIP file (`Senior_Advisors_Website.zip`)
+3. Follow instructions in `ИНСТРУКЦИЯ.txt` (included)
+4. Can be accessed locally or via network (192.168.x.x:8000)
 
 ## 📁 Project Structure
 
@@ -311,9 +326,28 @@ Team presentation:
 - ✅ Numbered "Why trust us" sections
 - ✅ Portfolio CTA sections with metrics
 
-## 🚀 Deployment Options
+## 🚀 Deployment
 
-### 1. Static Hosting (Recommended for Production)
+### Current Deployment: GitHub Pages ✅
+
+**The website is currently live on GitHub Pages:**
+
+- **Russian**: https://vadimbatkin.github.io/senior-advisors-website/index-ru.html
+- **English**: https://vadimbatkin.github.io/senior-advisors-website/index-en.html
+- **Repository**: https://github.com/VadimBatkin/senior-advisors-website
+
+To update the live website:
+```bash
+cd "C:\Users\User\SA website"
+git add .
+git commit -m "Your update message"
+git push origin main
+```
+
+Changes will be live on GitHub Pages within 1-2 minutes.
+
+### Alternative Deployment Options
+
 **Netlify** (Free, Easy):
 ```bash
 # Install Netlify CLI
@@ -333,12 +367,6 @@ npm install -g vercel
 cd "SA website"
 vercel --prod
 ```
-
-**GitHub Pages** (Free):
-1. Create GitHub repository
-2. Push code to repository
-3. Enable GitHub Pages in Settings
-4. Site available at: `https://yourusername.github.io/repo-name`
 
 ### 2. Cloud Hosting
 - **AWS S3 + CloudFront**
@@ -372,10 +400,34 @@ vercel --prod
 ### Development
 - **Lines of Code**: 22,000+ (HTML, CSS, JS across both languages)
 - **Development Time**: 4+ months
-- **Last Updated**: December 22, 2025
-- **Status**: Production-ready (Bilingual)
+- **Last Updated**: February 19, 2026
+- **Status**: Live on GitHub Pages (Production)
 
 ## 🔄 Recent Updates
+
+### February 19, 2026 - **LOCAL LOGOS & NEW CLIENTS**
+- ✅ **New Clients Added**:
+  - Ондулин (Ondulin) - Building materials manufacturer (Производство section)
+  - Rimi - Baltic supermarket chain (E-commerce и Ритейл section)
+- ✅ **Logo System Migration**: Replaced all Clearbit API URLs with local logo files
+  - Updated clients.html and clients-en.html (~20 logos)
+  - Updated portfolio.html and portfolio-en.html (~17 logos)
+  - All logos now load from local `/logos` folder
+  - Improved offline viewing and faster page loads
+- ✅ **New Logo Files Added**:
+  - Ондулин.png, Rimi.png
+
+### January 29, 2026 - **GITHUB PAGES DEPLOYMENT 🚀**
+- ✅ **Live Website**: Deployed to GitHub Pages
+  - Russian: https://vadimbatkin.github.io/senior-advisors-website/index-ru.html
+  - English: https://vadimbatkin.github.io/senior-advisors-website/index-en.html
+- ✅ **Git Repository**: Initialized and pushed to GitHub
+  - Repository: https://github.com/VadimBatkin/senior-advisors-website
+  - 96 files committed with full version control
+- ✅ **Public Access**: Website now accessible globally
+  - Share URLs with colleagues and clients
+  - No local server required for viewing
+  - All logos and assets loading properly
 
 ### December 22, 2025 - **BILINGUAL VERSION LAUNCH 🌍**
 - ✅ **Complete English Translation**: Created full English versions of all 9 pages
@@ -548,13 +600,17 @@ zip -r Senior_Advisors_Website.zip "SA website"
 
 ## 📄 License
 
-© 2025 Senior Advisors. All rights reserved.
+© 2026 Senior Advisors. All rights reserved.
 
 ---
 
-**Project Status**: ✅ Production Ready (Bilingual)
-**Last Updated**: December 22, 2025
-**Version**: 3.0
+**Project Status**: ✅ Live on GitHub Pages
+**Live URLs**:
+- Russian: https://vadimbatkin.github.io/senior-advisors-website/index-ru.html
+- English: https://vadimbatkin.github.io/senior-advisors-website/index-en.html
+
+**Last Updated**: February 19, 2026
+**Version**: 3.2
 **Languages**: Russian & English
 **Total Pages**: 18 (9 per language)
 **Developed with**: Claude Code

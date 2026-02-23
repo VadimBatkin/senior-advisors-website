@@ -419,19 +419,20 @@
                 <div class="contact-form-centered">
                     <h2>Связаться с нами</h2>
                     <p>Готовы развивать свой бизнес? Свяжитесь с нашими экспертами.</p>
-                    <form>
+                    <form action="https://formspree.io/f/vadim.batkin@s-advisors.com" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="text" name="name" placeholder="Ваше имя" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Компания">
+                            <input type="text" name="company" placeholder="Компания">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Сообщение" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта s-advisors.com">
                         <button type="submit" class="submit-button">Отправить сообщение</button>
                     </form>
                 </div>

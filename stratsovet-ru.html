@@ -1347,6 +1347,37 @@ body {
     justify-content: center;
     width: 100%;
   }
+
+  /* SCOPE */
+  .scope-row {
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+    padding: 28px 0;
+  }
+
+  .scope-num {
+    font-size: 36px;
+  }
+
+  .scope-hook {
+    font-size: 22px;
+  }
+
+  .scope-meta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* AI */
+  .ai-block {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 44px;
+  }
+
+  .ai-headline {
+    font-size: 32px;
+  }
 }
 
 /* Phone: ≤ 640px */
@@ -1608,6 +1639,67 @@ body {
     padding: 16px 22px;
     font-size: 12px;
   }
+
+  /* SCOPE — mobile */
+  .scope-lead {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .scope-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 24px 0;
+  }
+
+  .scope-num {
+    font-size: 28px;
+  }
+
+  .scope-hook {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .scope-questions {
+    font-size: 14px;
+  }
+
+  .scope-approaches span {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .scope-bridge {
+    font-size: 17px;
+  }
+
+  /* AI — mobile */
+  .ai-section {
+    padding: 40px 0;
+  }
+
+  .ai-block {
+    padding: 28px 24px;
+    gap: 24px;
+  }
+
+  .ai-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+  }
+
+  .ai-headline {
+    font-size: 24px;
+  }
+
+  .ai-text {
+    font-size: 14.5px;
+  }
+
+  .ai-note {
+    font-size: 12px;
+  }
 }
 
 .hero-meta {
@@ -1641,6 +1733,233 @@ body {
 }
 
 
+.scope-lead {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-weight: 400;
+  max-width: 900px;
+  margin-bottom: 56px;
+  letter-spacing: -0.005em;
+}
+
+.scope-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.scope-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  padding: 36px 0;
+  border-top: 1px solid var(--line);
+}
+
+.scope-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.scope-num {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  color: var(--accent-deep);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-style: italic;
+}
+
+.scope-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.scope-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scope-hook {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  max-width: 1000px;
+}
+
+.scope-hook i {
+  color: var(--accent-deep);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.scope-meta {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  margin-top: 4px;
+}
+
+.scope-questions {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.scope-approaches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: flex-start;
+}
+
+.scope-approaches span {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  padding: 7px 14px;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+}
+
+.scope-bridge {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  max-width: 1000px;
+}
+
+.scope-bridge b {
+  color: var(--accent-deep);
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* ========================================================== */
+/* AI ENABLER                                                 */
+/* ========================================================== */
+.ai-section {
+  padding: 60px 0;
+}
+
+.ai-block {
+  background: var(--ink);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 56px;
+  padding: 56px 64px;
+  border-left: 4px solid var(--accent);
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-block::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.ai-block::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 240px;
+  height: 240px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.ai-mark {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.ai-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.ai-headline {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.ai-headline i {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.ai-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.ai-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+.ai-note {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 /* Font weight overrides for Inter */
 .hero-title { font-weight: 700 !important; letter-spacing: -0.03em; }
 .sec-title { font-weight: 700 !important; }
@@ -1653,6 +1972,11 @@ body {
 .ctx-pie-big { font-weight: 700 !important; }
 .ctx-bar-value { font-weight: 600 !important; }
 .ctx-pie-item b { font-weight: 700 !important; }
+
+.scope-num { font-weight: 700 !important; font-style: normal; }
+.scope-hook { font-weight: 600 !important; }
+.ai-headline { font-weight: 700 !important; font-style: normal; }
+.ai-headline i { font-style: italic !important; }
 </style>
 </head>
 <body>
@@ -1921,13 +2245,138 @@ body {
   </div>
 </section>
 
+
+<section class="scope-section section">
+  <div class="lp-container">
+
+    <div class="sec-eyebrow">04 · Пять областей</div>
+
+    <h2 class="sec-title">С чем <span class="accent-word">приходят</span> <br>на&nbsp;Стратсовет</h2>
+
+    <p class="scope-lead">На&nbsp;воркшопе вы&nbsp;приходите с&nbsp;вашим вопросом — он&nbsp;попадает в&nbsp;одну из&nbsp;пяти областей, а&nbsp;мы&nbsp;разбираем его с&nbsp;помощью подходов, накопленных командой Стратсовета в&nbsp;сотнях проектов.</p>
+
+    <div class="scope-list">
+
+      <div class="scope-row">
+        <div class="scope-num">01</div>
+        <div class="scope-body">
+          <div class="scope-label">Рынок</div>
+          <h3 class="scope-hook">От «все клиенты <i>разные</i>» — к&nbsp;чёткому пониманию своего ядра и&nbsp;стратегии работы с&nbsp;рынком через него.</h3>
+          <div class="scope-meta">
+            <div class="scope-questions">Кто ваш клиент и&nbsp;почему он&nbsp;ваш? Куда масштабироваться? Как отстроиться от&nbsp;конкурентов?</div>
+            <div class="scope-approaches">
+              <span>Сегментация</span>
+              <span>Кастдев</span>
+              <span>Unit-экономика</span>
+              <span>Позиционирование</span>
+              <span>CJM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scope-row">
+        <div class="scope-num">02</div>
+        <div class="scope-body">
+          <div class="scope-label">Финансы</div>
+          <h3 class="scope-hook">От финансов как <i>бухгалтерского прошлого</i> — к&nbsp;финансам как языку управленческих решений.</h3>
+          <div class="scope-meta">
+            <div class="scope-questions">Какая форма финансирования подойдёт? Где оптимизировать расходы без потерь? Как устроить управленческую отчётность?</div>
+            <div class="scope-approaches">
+              <span>Финансовое моделирование</span>
+              <span>Формы финансирования</span>
+              <span>Управленческая отчётность</span>
+              <span>Работа с долгом</span>
+              <span>Оптимизация расходов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scope-row">
+        <div class="scope-num">03</div>
+        <div class="scope-body">
+          <div class="scope-label">Люди и культура</div>
+          <h3 class="scope-hook">От ценностей как <i>слов на стенах</i> — к&nbsp;ценностям как рабочему фильтру при найме, повышении, мотивации и&nbsp;разрешении конфликтов.</h3>
+          <div class="scope-meta">
+            <div class="scope-questions">Как нанимать сильных? Как удерживать и&nbsp;мотивировать? Как внедрять новую культуру?</div>
+            <div class="scope-approaches">
+              <span>Образовательные продукты</span>
+              <span>Системы мотивации</span>
+              <span>Ассессмент ключевых ролей</span>
+              <span>Преемственность</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scope-row">
+        <div class="scope-num">04</div>
+        <div class="scope-body">
+          <div class="scope-label">Организация и процессы</div>
+          <h3 class="scope-hook">От бесконечного <i>ручного управления</i> — к&nbsp;системе, где команды договариваются без вашего участия.</h3>
+          <div class="scope-meta">
+            <div class="scope-questions">Как наладить кросс-функциональное взаимодействие? Как перевести идею в&nbsp;операционную практику?</div>
+            <div class="scope-approaches">
+              <span>Регламенты рабочих групп</span>
+              <span>Механики экспериментов</span>
+              <span>Оргдизайн</span>
+              <span>Разрешение конфликтов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scope-row">
+        <div class="scope-num">05</div>
+        <div class="scope-body">
+          <div class="scope-label">Стратегия</div>
+          <h3 class="scope-hook">От реактивной работы <i>«по ситуации»</i> — к&nbsp;стратегии как системе сознательных ставок с&nbsp;проверкой реальностью.</h3>
+          <div class="scope-meta">
+            <div class="scope-questions">Какие ставки делаем на&nbsp;3–5&nbsp;лет? Привлекать инвестиции или расти органически? Готовить компанию к&nbsp;сделке?</div>
+            <div class="scope-approaches">
+              <span>Стратегические сценарии</span>
+              <span>Портфельный анализ</span>
+              <span>Инвестиционный тезис</span>
+              <span>Привлечение инвестиций</span>
+              <span>Подготовка к сделке</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="ai-section section">
+  <div class="lp-container">
+
+    <div class="ai-block">
+      <div class="ai-mark">
+        <div class="ai-label">Почему это стало возможным</div>
+        <div class="ai-headline"><i>AI</i> делает топовых консультантов <i>доступнее</i></div>
+      </div>
+
+      <div class="ai-body">
+        <p class="ai-text">Раньше стратегическая работа с&nbsp;такой командой означала проектный контракт: месяцы, восемь человек, бюджет от&nbsp;30&nbsp;млн&nbsp;₽. Средний бизнес мог позволить это раз в&nbsp;3–5&nbsp;лет.</p>
+        <p class="ai-text">AI изменил структуру работы команды. Ресёрч, моделирование, первичная аналитика, оформление материалов — то, что занимало 70% времени, теперь закрывается за&nbsp;часы.</p>
+        <p class="ai-text">Это освободило главное — время старших консультантов на&nbsp;разбор вашего кейса. Без прослойки джунов, без ожидания, в&nbsp;формате регулярной подписки.</p>
+        <div class="ai-note">AI работает с&nbsp;обезличенными данными. Конфиденциальность вашего кейса — внутри команды Стратсовета.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ========================================================== -->
 <!-- TEAM                                                       -->
 <!-- ========================================================== -->
 <section class="team-section section">
   <div class="lp-container">
 
-    <div class="sec-eyebrow">04 · Кому доверяете</div>
+    <div class="sec-eyebrow">06 · Кому доверяете</div>
 
     <h2 class="sec-title">Команда <span class="accent-word">Стратсовета</span></h2>
 
@@ -1989,9 +2438,9 @@ body {
 <section class="ws-section section surface">
   <div class="lp-container">
 
-    <div class="sec-eyebrow">05 · Точка доказательства</div>
+    <div class="sec-eyebrow">07 · Точка доказательства</div>
 
-    <h2 class="sec-title">Демо-воркшоп <br><span class="accent-word">20 мая</span></h2>
+    <h2 class="sec-title">Демо-воркшоп <br><span class="accent-word">27 мая</span></h2>
 
     <p class="ws-lead">Для&nbsp;тех, кто хочет увидеть Стратсовет в&nbsp;деле, мы&nbsp;проводим воркшоп с&nbsp;реальными разборами ваших кейсов.</p>
 
@@ -2014,15 +2463,15 @@ body {
 
       <div class="ws-detail">
         <div class="ws-detail-label">Что потом?</div>
-        <p class="ws-detail-text">Бесплатный первый месяц Стратсовета для&nbsp;первого набора из&nbsp;10&nbsp;человек, дальше — выбираете комфортный режим взаимодействия в&nbsp;зависимости от&nbsp;задач.</p>
+        <p class="ws-detail-text">Подписка с&nbsp;гарантией возврата. Если формат не&nbsp;подойдёт после первого месяца — оплата возвращается без&nbsp;разговоров. Цена фиксируется на&nbsp;всё время подписки.</p>
       </div>
 
     </div>
 
     <div class="ws-cta-block">
       <div class="ws-cta-text">
-        <div class="ws-cta-when">Среда · 20 мая · онлайн · 3 часа</div>
-        <div class="ws-cta-sub">Чтобы попасть на&nbsp;воркшоп, начните с&nbsp;заявки в&nbsp;Telegram. Я&nbsp;отвечу лично, обычно в&nbsp;течение суток — созвонимся, обсудим запрос, расскажу подробнее про&nbsp;Стратсовет. Если вам подойдёт формат, встретимся, разберём ваш кейс на&nbsp;воркшопе и&nbsp;начнём работу.</div>
+        <div class="ws-cta-when">Среда · 27 мая · онлайн · 3 часа</div>
+        <div class="ws-cta-sub">Начните с&nbsp;заявки в&nbsp;Telegram. Денис ответит лично, обычно в&nbsp;течение суток. После короткого созвона и&nbsp;знакомства с&nbsp;форматом — приглашение на&nbsp;воркшоп для разбора вашего кейса и&nbsp;старт работы.</div>
       </div>
       <a class="ws-cta-btn" href="https://t.me/dsobepanek">
         Написать в Telegram

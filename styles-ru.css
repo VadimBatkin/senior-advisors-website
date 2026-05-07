@@ -1126,6 +1126,8 @@ body {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -1204,7 +1206,8 @@ body {
     }
 
     .hero {
-        padding: 2rem 0;
+        padding: 90px 0 3rem;
+        min-height: auto;
     }
 
     .about-section,
@@ -1230,6 +1233,15 @@ body {
 
     .nav-container {
         padding: 0 15px;
+    }
+
+    .service-split-buttons {
+        flex-direction: column;
+    }
+
+    .service-mini-button {
+        width: 100%;
+        justify-content: center;
     }
 }
 

@@ -34,8 +34,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: #ffffff;
     z-index: 1000;
     padding: 16px 0;
     border-bottom: 1px solid var(--border-light);

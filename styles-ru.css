@@ -1134,7 +1134,10 @@ body {
     }
 
     .dropdown-menu {
+        display: none;
         position: static;
+        opacity: 1;
+        visibility: visible;
         min-width: 0;
         width: 100%;
         box-shadow: none;
@@ -1143,6 +1146,11 @@ body {
         padding: 4px 0;
         background: #f8f9fa;
         transform: none !important;
+        transition: none;
+    }
+
+    .nav-item.has-dropdown.active .dropdown-menu {
+        display: block;
     }
 
     .nav-menu {

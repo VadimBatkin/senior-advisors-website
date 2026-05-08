@@ -1,7 +1,7 @@
 # Senior Advisors Website
 
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen)
-![Version](https://img.shields.io/badge/version-4.0-blue)
+![Version](https://img.shields.io/badge/version-4.1-blue)
 ![Pages](https://img.shields.io/badge/pages-20-orange)
 ![Languages](https://img.shields.io/badge/languages-2-green)
 
@@ -11,7 +11,7 @@ Professional bilingual consulting company website for Senior Advisors - a leadin
 
 **https://s-advisors.com**
 
-- **Russian version**: https://s-advisors.com/index-ru.html
+- **Russian version**: https://s-advisors.com (root, no suffix needed)
 - **English version**: https://s-advisors.com/index-en.html
 
 Use the language switcher (RU/EN) to toggle between languages on any page.
@@ -37,7 +37,7 @@ Visit **https://s-advisors.com**
 ```bash
 cd "path/to/SA website"
 python -m http.server 8000
-# Open http://localhost:8000/index-ru.html
+# Open http://localhost:8000
 ```
 
 ## URL Structure
@@ -46,7 +46,7 @@ All pages use clean URLs via subfolder `index.html` architecture. Old `.html` UR
 
 | Page | Clean URL |
 |------|-----------|
-| Homepage (RU) | `/index-ru.html` |
+| Homepage (RU) | `/` (root) |
 | Homepage (EN) | `/index-en.html` |
 | Portfolio | `/portfolio` |
 | Clients | `/clients` |
@@ -63,7 +63,8 @@ All pages use clean URLs via subfolder `index.html` architecture. Old `.html` UR
 
 ```
 SA website/
-├── index-ru.html                        # Homepage (Russian)
+├── index.html                           # Homepage (Russian) — served at /
+├── index-ru.html                        # Redirects to /
 ├── index-en.html                        # Homepage (English)
 │
 ├── portfolio/index.html                 # Portfolio — 62+ projects
@@ -96,7 +97,7 @@ SA website/
 
 ### Main Pages
 
-**Homepage** (`/index-ru.html`)
+**Homepage** (`/`)
 - Hero section with statistics (100+ clients, 150+ projects, 20+ industries)
 - 5 service cards with modern design
 - Split M&A button (Fundraising / Acquisition)
@@ -111,6 +112,7 @@ SA website/
 - 69+ clients across 10 industry categories
 - Real company logos with JS-powered loading and initials fallback
 - Industry categories: Technology, E-commerce, HealthTech, Logistics, HoReCa, FinTech, PropTech, Production, Media, Consulting
+- Clients without logos show **NDA** placeholder instead of initials
 
 **Team** (`/team`)
 - 3 Partners with bios, education, contact info
@@ -121,6 +123,7 @@ SA website/
 - Standalone landing page for the closed strategic advisory club
 - Scope of 5 areas, team profiles, demo workshop CTA
 - AI enabler section explaining the subscription model
+- Team section with 4 grayscale photos (Denis, Vadim, Vladislav ×2)
 
 ### Service Pages
 
@@ -175,6 +178,15 @@ git push origin main
 Changes go live within 1–2 minutes.
 
 ## Recent Updates
+
+### May 2026 — Root Homepage, Team Photos & Photo Optimization
+
+- **Root homepage**: Created `index.html` at root so `s-advisors.com/` works without any suffix. `index-ru.html` now redirects to `/`.
+- **Стратсовет team photos**: Added grayscale photos for all 4 team members (Denis, Vadim, Vladislav ×2). Fixed photo not appearing due to file never being committed to git.
+- **Photo optimization**: Resized team photos from 4000–5000px originals to max 900px using LANCZOS resampling. Eliminated Moiré/dot artifacts from extreme downscaling. File sizes: 3–5 MB → 62–102 KB each.
+- **Badge position**: Moved "Автор формата" badge to bottom of photo area on Denis's card so it no longer overlaps his head.
+- **Portfolio additions**: Added Chat2Desk (стратегия развития) and Ондулин (поиск новых стратегических направлений) to portfolio (RU + EN).
+- **Clients NDA fallback**: Clients without logos now show "NDA" in the placeholder circle instead of company initials.
 
 ### May 2026 — Clean URLs & Mobile Overhaul
 
@@ -238,4 +250,4 @@ Changes go live within 1–2 minutes.
 
 ---
 
-**Version**: 4.0 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com
+**Version**: 4.1 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com

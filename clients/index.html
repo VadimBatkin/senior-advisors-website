@@ -1005,12 +1005,11 @@
                     const container = document.createElement('div');
                     container.className = 'client-logo-container';
 
-                    // Handle loading errors - fallback to company initials
+                    // Handle loading errors - fallback to NDA
                     img.onerror = function() {
-                        const initials = companyName.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
                         const fallbackPlaceholder = placeholderDiv.cloneNode(true);
-                        fallbackPlaceholder.textContent = initials;
-                        fallbackPlaceholder.style.fontSize = initials.length > 2 ? '1.5rem' : '2rem';
+                        fallbackPlaceholder.textContent = 'NDA';
+                        fallbackPlaceholder.style.fontSize = '1.5rem';
                         container.appendChild(fallbackPlaceholder);
                         img.remove();
                     };
@@ -1023,13 +1022,12 @@
                     container.appendChild(img);
                     placeholderDiv.parentNode.replaceChild(container, placeholderDiv);
                 } else {
-                    // Wrap placeholder in container for consistency - show company initials
-                    const initials = companyName.split(' ').map(word => word[0]).join('').substring(0, 3).toUpperCase();
+                    // Wrap placeholder in container for consistency - show NDA
                     const container = document.createElement('div');
                     container.className = 'client-logo-container';
                     const initialsPlaceholder = placeholderDiv.cloneNode(true);
-                    initialsPlaceholder.textContent = initials;
-                    initialsPlaceholder.style.fontSize = initials.length > 2 ? '1.5rem' : '2rem';
+                    initialsPlaceholder.textContent = 'NDA';
+                    initialsPlaceholder.style.fontSize = '1.5rem';
                     container.appendChild(initialsPlaceholder);
                     placeholderDiv.parentNode.replaceChild(container, placeholderDiv);
                 }

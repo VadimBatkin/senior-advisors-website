@@ -515,90 +515,133 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Что говорят клиенты</h2>
-                    <p class="section-subtitle">Отзывы партнёров, с которыми мы работали</p>
-                </div>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">После продолжительного поиска мы выбрали Senior Advisors для подготовки инвестиционной презентации, анализа рынка и прогноза P&L. С самого начала нас поразило глубокое понимание венчурной индустрии и текущей ситуации в России. Консультанты не просто собрали информацию — мы вместе посмотрели стратегически на наш проект.</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">DY</div>
-                            <div>
-                                <div class="testimonial-name">Denis Yudin</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2024</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">Рекомендую команду S. Advisors. Очень рад, что мы начали сотрудничество и в результате не только закрыли сделку с МТС, но и приобрели новых бизнес-партнеров. И ещё кучу годных слайдов на все случаи жизни.</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">YV</div>
-                            <div>
-                                <div class="testimonial-name">Yury Visnevsky</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">Работаем с ребятами уже достаточно давно. Когда они начинали менторскую поддержку нашего проекта Chat2Desk, нас было трое и офис на лоджии. Сейчас 80, а если всю международную сеть брать — то и все 200. Выводы делайте сами.</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">СС</div>
-                            <div>
-                                <div class="testimonial-name">Сергей Стащак</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">От всей души рекомендую Вадима и компанию! Несмотря на сложную ситуацию на рынке, ребята смогли не только найти покупателя для нашей компании, но и согласовать привлекательные условия сделки в сжатые сроки.</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">AK</div>
-                            <div>
-                                <div class="testimonial-name">Artyom Kosilov</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">Вадим и его команда помогли нам продать компанию. Спасибо за профессионализм, оперативность и внимательность. Рекомендую!</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">AT</div>
-                            <div>
-                                <div class="testimonial-name">Alexandra Temlyakova</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2022</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="testimonial-text">Работал с Вадимом и его командой на нескольких проектах — подробная комплексная аналитика рынка и desk studies. Коллеги очень ответственно относятся к качеству, гибко подстраиваются под задачи клиента и умеют работать быстро. С ними приятно работать. Рекомендую!</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">ДБ</div>
-                            <div>
-                                <div class="testimonial-name">Дмитрий Бергельсон</div>
-                                <div class="testimonial-source">Отзыв на Facebook, 2021</div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="section-subtitle">100% рекомендаций — 29 отзывов на Facebook</p>
                 </div>
             </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-slide active">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">После продолжительного поиска мы выбрали Senior Advisors для подготовки инвестиционной презентации, анализа рынка и прогноза P&L. С самого начала нас поразило глубокое понимание венчурной индустрии. Консультанты не просто собрали информацию — мы вместе посмотрели стратегически на наш проект.</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">DY</div>
+                            <div>
+                                <div class="slide-name">Denis Yudin</div>
+                                <div class="slide-source">Facebook, 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">Рекомендую команду S. Advisors. Очень рад, что мы начали сотрудничество и в результате не только закрыли сделку с МТС, но и приобрели новых бизнес-партнеров. И ещё кучу годных слайдов на все случаи жизни.</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">YV</div>
+                            <div>
+                                <div class="slide-name">Yury Visnevsky</div>
+                                <div class="slide-source">Facebook, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">Работаем с ребятами уже достаточно давно. Когда они начинали менторскую поддержку нашего проекта Chat2Desk, нас было трое и офис на лоджии. Сейчас 80, а если всю международную сеть брать — то и все 200. Выводы делайте сами.</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">СС</div>
+                            <div>
+                                <div class="slide-name">Сергей Стащак</div>
+                                <div class="slide-source">Facebook, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">От всей души рекомендую Вадима и компанию! Несмотря на сложную ситуацию на рынке, ребята смогли не только найти покупателя для нашей компании, но и согласовать привлекательные условия сделки в сжатые сроки.</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">AK</div>
+                            <div>
+                                <div class="slide-name">Artyom Kosilov</div>
+                                <div class="slide-source">Facebook, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">Вадим и его команда помогли нам продать компанию. Спасибо за профессионализм, оперативность и внимательность. Рекомендую!</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">AT</div>
+                            <div>
+                                <div class="slide-name">Alexandra Temlyakova</div>
+                                <div class="slide-source">Facebook, 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <span class="slide-quote">&ldquo;</span>
+                        <div class="slide-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                        <p class="slide-text">Работал с Вадимом и его командой на нескольких проектах — подробная комплексная аналитика рынка и desk studies. Коллеги ответственно относятся к качеству, гибко подстраиваются под задачи клиента и умеют работать быстро. С ними приятно работать.</p>
+                        <div class="slide-author">
+                            <div class="slide-avatar">ДБ</div>
+                            <div>
+                                <div class="slide-name">Дмитрий Бергельсон</div>
+                                <div class="slide-source">Facebook, 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn slider-prev" aria-label="Предыдущий">&#8249;</button>
+                <button class="slider-btn slider-next" aria-label="Следующий">&#8250;</button>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
         </section>
+        <script>
+        (function(){
+            var slides = document.querySelectorAll('.testimonial-slide');
+            var dotsContainer = document.getElementById('sliderDots');
+            var track = document.getElementById('testimonialsTrack');
+            var current = 0;
+            var timer;
+
+            // Build dots
+            slides.forEach(function(_, i){
+                var d = document.createElement('button');
+                d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                d.setAttribute('aria-label', 'Слайд ' + (i+1));
+                d.addEventListener('click', function(){ go(i); });
+                dotsContainer.appendChild(d);
+            });
+
+            function updateHeight(){
+                var active = slides[current];
+                track.style.minHeight = active.offsetHeight + 'px';
+            }
+
+            function go(n){
+                slides[current].classList.remove('active');
+                dotsContainer.children[current].classList.remove('active');
+                current = (n + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dotsContainer.children[current].classList.add('active');
+                setTimeout(updateHeight, 10);
+                resetTimer();
+            }
+
+            document.querySelector('.slider-prev').addEventListener('click', function(){ go(current - 1); });
+            document.querySelector('.slider-next').addEventListener('click', function(){ go(current + 1); });
+
+            function resetTimer(){
+                clearInterval(timer);
+                timer = setInterval(function(){ go(current + 1); }, 6000);
+            }
+
+            updateHeight();
+            resetTimer();
+        })();
+        </script>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">

@@ -1,8 +1,8 @@
 # Senior Advisors Website
 
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen)
-![Version](https://img.shields.io/badge/version-4.1-blue)
-![Pages](https://img.shields.io/badge/pages-20-orange)
+![Version](https://img.shields.io/badge/version-4.2-blue)
+![Pages](https://img.shields.io/badge/pages-25-orange)
 ![Languages](https://img.shields.io/badge/languages-2-green)
 
 Professional bilingual consulting company website for Senior Advisors - a leading M&A advisory and strategic consulting firm.
@@ -21,7 +21,7 @@ Use the language switcher (RU/EN) to toggle between languages on any page.
 Complete, multi-page, **bilingual website** (Russian & English) showcasing Senior Advisors' consulting services, portfolio, team, and client relationships. Features modern design, responsive layouts, professional presentation, and seamless language switching.
 
 ### Key Statistics
-- **20 HTML Pages** — 10 pages in Russian + 10 pages in English (complete bilingual coverage)
+- **25 HTML Pages** — 10 core pages × 2 languages + privacy (RU/EN) + 404 + index-ru.html redirect
 - **2 Languages** — Full Russian and English versions with language switcher
 - **69+ Clients** — Across 10 industry categories
 - **62+ Projects** — Detailed case studies with tombstone-style presentation
@@ -58,6 +58,9 @@ All pages use clean URLs via subfolder `index.html` architecture. Old `.html` UR
 | Acquisition | `/service-acquisition` |
 | Стратсовет | `/stratsovet` |
 | + EN versions | `/portfolio-en`, `/team-en`, etc. |
+| Privacy Policy (RU) | `/privacy` |
+| Privacy Policy (EN) | `/privacy-en` |
+| 404 | `/404.html` |
 
 ## Project Structure
 
@@ -81,6 +84,10 @@ SA website/
 │
 ├── (+ -en/ variants for all above)
 │
+├── privacy/index.html                   # Privacy Policy (Russian, 152-ФЗ)
+├── privacy-en/index.html                # Privacy Policy (English, GDPR-friendly)
+├── 404.html                             # Custom 404 page
+│
 ├── STYLES & SCRIPTS
 │   ├── styles-ru.css                    # Main stylesheet
 │   ├── styles-portfolio.css             # Portfolio page styles
@@ -90,7 +97,15 @@ SA website/
 └── ASSETS
     ├── logos/                           # Company and client logos
     │   └── Senior Advisors.png          # Transparent PNG logo
-    └── ФОТО/                            # Team member photos (grayscale)
+    ├── ФОТО/                            # Team member photos (grayscale, max 900px)
+    ├── favicon.ico                      # Favicon (orange, SA logo)
+    ├── favicon-32x32.png
+    ├── favicon-16x16.png
+    ├── apple-touch-icon.png
+    ├── og-image.png                     # Open Graph image (1200×630)
+    ├── sitemap.xml                      # XML sitemap (25 pages)
+    ├── robots.txt                       # Allow all, points to sitemap
+    └── llms.txt                         # AI crawler context
 ```
 
 ## Website Pages
@@ -179,6 +194,23 @@ Changes go live within 1–2 minutes.
 
 ## Recent Updates
 
+### May 2026 — SEO, Analytics, Privacy & UX
+
+- **Yandex Metrika**: Counter (ID 109118609) added to all 25 pages — webvisor, clickmap, accurate bounce tracking.
+- **SEO — hreflang**: `ru`/`en`/`x-default` alternate tags on all 20 core pages.
+- **SEO — Organization schema**: `schema.org/Organization` JSON-LD on RU and EN homepages.
+- **SEO — FAQPage schema**: 3–4 Q&A pairs on all 22 content pages.
+- **SEO — Open Graph + Twitter Card**: Full OG tags and `summary_large_image` on all pages.
+- **Favicon**: Orange `#F47720` background with SA logo — `.ico`, `32×32`, `16×16`, `apple-touch-icon`.
+- **og-image.png**: 1200×630 branded image for social sharing.
+- **sitemap.xml + robots.txt + llms.txt**: Search engine and AI crawler support.
+- **Privacy Policy**: `/privacy` (152-ФЗ, RU) and `/privacy-en` (GDPR-friendly). Linked in footer of all pages. Updated to include Yandex Metrika and Google Fonts disclosure.
+- **Custom 404**: Branded `/404.html` with navigation links, auto-served by GitHub Pages.
+- **Phone updated**: +7 952 370 7111 across all 39 HTML files.
+- **Legal name**: ООО "Синьор Эдвайзорс" in privacy policy.
+- **Client testimonials slider**: Dark-background slider with 6 featured reviews + expand button showing all 29 Facebook reviews (temporarily removed, CSS preserved).
+- **Стратсовет photo fixes**: Denis — `object-position: center top` to prevent head crop on mobile; Афанасьев — `object-position: center 25%`; mobile photo bleed corrected for 640px breakpoint.
+
 ### May 2026 — Root Homepage, Team Photos & Photo Optimization
 
 - **Root homepage**: Created `index.html` at root so `s-advisors.com/` works without any suffix. `index-ru.html` now redirects to `/`.
@@ -242,7 +274,7 @@ Changes go live within 1–2 minutes.
 **Senior Advisors**
 - **Website**: https://s-advisors.com
 - **Email**: info@s-advisors.com
-- **Phone**: +7 (921) 646-47-20
+- **Phone**: +7 952 370 7111
 
 ## License
 
@@ -250,4 +282,4 @@ Changes go live within 1–2 minutes.
 
 ---
 
-**Version**: 4.1 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com
+**Version**: 4.2 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com

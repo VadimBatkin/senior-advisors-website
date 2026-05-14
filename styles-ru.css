@@ -216,6 +216,12 @@ body {
     cursor: pointer;
 }
 
+button.hamburger {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
 .bar {
     width: 25px;
     height: 3px;

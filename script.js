@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dropdownItems.forEach(item => {
         const dropdownLink = item.querySelector('.nav-link');
+        dropdownLink.setAttribute('aria-haspopup', 'true');
+        dropdownLink.setAttribute('aria-expanded', 'false');
 
         // Toggle dropdown on click
         dropdownLink.addEventListener('click', function(e) {
@@ -19,11 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdownItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
+                    otherItem.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
                 }
             });
 
             // Toggle current dropdown
+            const isExpanded = item.classList.contains('active');
             item.classList.toggle('active');
+            dropdownLink.setAttribute('aria-expanded', String(!isExpanded));
         });
     });
 
@@ -32,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!e.target.closest('.nav-item.has-dropdown')) {
             dropdownItems.forEach(item => {
                 item.classList.remove('active');
+                item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
             });
         }
     });
@@ -42,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             dropdownItems.forEach(item => {
                 item.classList.remove('active');
+                item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
             });
         });
     });
@@ -50,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', String(hamburger.classList.contains('active')));
     });
 
     // Close mobile menu when clicking on a link
@@ -57,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
         });
     });
 

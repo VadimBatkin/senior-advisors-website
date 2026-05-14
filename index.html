@@ -149,11 +149,11 @@
                         <a href="#contact" class="cta-button">Получить консультацию</a>
                     </li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" aria-label="Открыть меню" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -518,16 +518,16 @@
                     <p>Готовы развивать свой бизнес? Свяжитесь с нашими экспертами.</p>
                     <form action="https://formspree.io/f/mreaowdr" method="POST">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="text" name="name" placeholder="Ваше имя" aria-label="Ваше имя" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email" aria-label="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="company" placeholder="Компания">
+                            <input type="text" name="company" placeholder="Компания" aria-label="Компания">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Сообщение" aria-label="Сообщение" rows="5" required></textarea>
                         </div>
                         <input type="hidden" name="_subject" value="Новая заявка с сайта s-advisors.com">
                         <button type="submit" class="submit-button">Отправить сообщение</button>

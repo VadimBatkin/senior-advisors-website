@@ -1,7 +1,7 @@
 # Senior Advisors Website
 
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen)
-![Version](https://img.shields.io/badge/version-4.2-blue)
+![Version](https://img.shields.io/badge/version-4.3-blue)
 ![Pages](https://img.shields.io/badge/pages-25-orange)
 ![Languages](https://img.shields.io/badge/languages-2-green)
 
@@ -163,7 +163,8 @@ SA website/
 - Responsive breakpoints: 960px / 768px / 640px / 480px
 - CSS custom properties for consistent theming
 - Vanilla JavaScript — no frameworks
-- Mobile hamburger menu with click-based dropdowns
+- Mobile hamburger menu (`<button>` with `aria-expanded`) with click-based dropdowns
+- Accessibility Tree-friendly: semantic HTML, `aria-label` on all form inputs and interactive elements
 - GitHub Pages deployment with custom domain `s-advisors.com`
 
 ## Technical Stack
@@ -193,6 +194,16 @@ git push origin main
 Changes go live within 1–2 minutes.
 
 ## Recent Updates
+
+### May 2026 — SEO Indexing Fixes, Accessibility & Bug Fixes
+
+- **Google Search Console**: Fixed all indexing issues — canonical tags added to all 19 root-level redirect `.html` files (Page with redirect × 8, Duplicate canonical × 3).
+- **Orphan pages**: `market-analysis.html`, `strategy.html`, `service-ma.html`, `service-ma-fundraising.html` — added `noindex` + `meta refresh` redirect to current equivalents. Same for `stratsovet_landing.html` and `stratsovet_landing (3).html`.
+- **AI Agent / Accessibility**: Hamburger menu converted from `<div>` to `<button>` with `aria-label` and `aria-expanded` on all 20 pages. `aria-haspopup` + `aria-expanded` wired on dropdown nav links via `script.js`.
+- **Accessibility**: Added `aria-label` to all 4 form fields on homepage contact form.
+- **Bug fix**: Footer and nav links `../index-ru.html#contact` → `../#contact` on 9 RU pages — the meta-refresh redirect was silently dropping the hash fragment, so "Контакты" links landed at page top instead of the contact section.
+- **Bug fix**: `script.js` — hamburger click handler wrapped in `null` guard; dropdown `aria-expanded` resets on all three close paths (outside click, dropdown link click, nav link click).
+- **Cleanup**: Removed `mistakes/` folder (dev screenshots accidentally committed to repo).
 
 ### May 2026 — SEO, Analytics, Privacy & UX
 
@@ -282,4 +293,4 @@ Changes go live within 1–2 minutes.
 
 ---
 
-**Version**: 4.2 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com
+**Version**: 4.3 | **Last Updated**: May 2026 | **Status**: Live at s-advisors.com
